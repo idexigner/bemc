@@ -1,0 +1,31 @@
+body {
+	border: 1px solid;
+	padding: 10px;
+}
+
+.feed-container .content .item .title a:link,
+.feed-container .content .item .description {
+	font-family: 'Lato', sans-serif;
+}
+
+.feed-container .content .item {
+	margin: 10px 0px;
+	padding: 0;
+}
+
+.feed-container .content .item .title a:link {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	line-height: 1.5;
+}
+
+.feed-container .content .item .description {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	color: #868686;
+}

@@ -1,0 +1,3086 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MiMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Medicine Detail, drug detail, brand detail">
+    <meta name="keywords" content="">
+    <meta name="author" content="amalesh.debnath@gmail.com">
+
+    <link rel="icon" type="image/png" href="../frontend/images/fav.png">
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://www.rxmimsbd.com" />
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet"> -->
+    <!------Font Awesome Css------>
+    <!-- CDN -->
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="../frontend/js/jquery-3.3.1.min.js"></script>
+    <script src="../frontend/js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../frontend/js/common-script.js"></script>
+    <script src="../frontend/js/popup-script.js"></script>
+    <script src="../frontend/js/ajax-call.js"></script>
+
+    <!------Main Css------>
+    <link rel="stylesheet" href="../frontend/css/imageviewer.css">
+    <link rel="stylesheet" href="../frontend/css/fonts/fonts.min.css">
+    <link rel="stylesheet" href="../frontend/css/base.css">
+    <link rel="stylesheet" href="../frontend/css/marquee.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169020184-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169020184-1');
+    </script>
+</head>
+
+<body>
+
+
+    <style>
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+    ul.navbar-nav.mt-2.mt-lg-0.main-menu.mr-auto.ml-auto {
+    background: #091C2E;
+    z-index: 9999 !important;
+    position: absolute;
+    width: 100%;
+    padding-left: -3px;
+    left: 0;
+    padding-left: 20px;
+}
+    .lockal {
+      font-family: 'Bahnschrift Regular', sans-serif;
+      height: 100px;
+      position: relative;
+
+      border: 1px solid #e4e4e4;
+      padding: 15px 0;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      display: flex;
+      width: 100%;
+      margin: 20px 10px;
+      /* padding: 30px 0px !important; */
+      padding: 10px;
+      height: 120px;
+      border-radius: 20px;
+      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-top: 0px;
+    }
+
+
+    .search-wrapper {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 20px !important;
+      /* width: 800px; */
+      width: 90%;
+      margin-top: 19px !important;
+      margin: auto !important;
+      margin-bottom: 35px !important;
+    }
+
+    ul.search-tabs.group li a {
+      font-size: 10px;
+    }
+
+    section.anitext {
+      text-align: center;
+      width: 90% !important;
+      margin: auto;
+    }
+
+    img.logo.d-lg-none {
+      width: 199px !important;
+    }
+
+    .marquee-sibling {
+      font-size: 12px !important;
+    }
+
+    .waviy {
+      margin: auto;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    .waviy span {
+      font-size: 12px !important;
+    }
+
+    .section-col h4 {
+    font-size: var(--font-size-regular);
+    color: var(--title-color);
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    position: relative !important;
+    font-size: 10px;
+    text-align: center;
+}
+
+img#footerLogo {
+    margin: 28px 0px;
+    width: 215px !important;
+    margin-top: 0px;
+}
+
+span.visitor-count {
+    display: none !important;
+}
+
+.home-special-report-slider-wrapper.content-section {
+    margin: 0 !important;
+    width: 95% !important;
+}
+
+button.slick-next.slick-arrow {
+    display: none !important;
+}
+
+div#durandar {
+    margin: 20px 0px !important;
+    /* padding: 30px 0px; */
+}
+
+div#my_tub .home-special-report-slider-wrapper.content-section {
+    width: 100% !important;
+}
+
+div#durandar .home-special-report-slider-wrapper.content-section {
+    width: 100% !important;
+}
+
+div#durandar .home-special-report-slider-wrapper.content-section {
+    padding: 20px 0px !important;
+}
+
+div#durandar .home-special-report-slider-wrapper.content-section img.mratime {
+    margin-bottom: 20px !important;
+}
+
+
+  }
+
+        nav.navbar.navbar-expand-lg.navbar-light.home-top-nav a {
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 300 !important;
+
+        }
+
+        .container22 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            align-content: center;
+            height: 100% !important;
+            padding-left: 60px !important;
+        }
+
+        .dropdown-menu {
+            background: #34495E;
+        }
+
+        .dropdown-menu a.dropdown-item {
+            padding: 5px 5px !important;
+        }
+
+        .container22 .container.d-flex.navbar-container.main-menu-top-bar {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container22 ul.navbar-nav.mt-2.mt-lg-0.main-menu.mr-auto.ml-auto {
+            margin-right: 0px !important;
+            margin-right: 0px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .container2222.d-flex.navbar-container.main-menu-top-bar {
+            width: 100%;
+            padding-right: 60px;
+        }
+
+        ul.navbar-nav.mt-2.mt-lg-0.main-menu.mr-auto.ml-auto li a {
+
+            color: rgba(255, 255, 255, .8) !important;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+
+        .umesh {
+            position: relative;
+        }
+
+        .umesh:hover .dropdown-menu {
+            display: block !important;
+
+        }
+
+
+
+        li#mainMenuResource .dropdown-menu.mims-dropdown-menu a.dropdown-item {
+            margin: 0 !important;
+            padding-left: 10px !important;
+        }
+
+        .umesh .dropdown-menu.mims-dropdown-menu a {
+            margin: 0px 5px !important;
+        }
+
+
+        .dropdown-menu.mims-dropdown-menu {
+            padding-top: 15px;
+            margin-top: 0px;
+            border-top: none !important;
+            left: 15px;
+        }
+
+
+
+        .raju {
+            display: none;
+        }
+
+        .mehra:hover .raju {
+            display: block !important;
+        }
+
+        a#navbarDropdownEbook {
+            border: none;
+        }
+
+
+        .dropdown-menu.mims-dropdown-menu a.dropdown-item.nav-link.mims-nav-link {
+            margin-left: 0px !important;
+        }
+
+
+        .rgmk:hover div#muj {
+            display: block !important;
+        }
+
+
+        a.nav-link.text-success.mims-nav-link-cta-secondary {
+            color: white !important;
+            margin: 0px 10px !important;
+            background: #02A44F !important;
+            border-radius: 5px;
+        }
+
+
+
+        span.visitor-count {
+            position: absolute;
+            right: 80px;
+            top: 40px;
+        }
+
+        footer {
+            position: relative;
+        }
+
+        div#bihari {
+            position: relative;
+        }
+
+        .section-col h4::after {
+            content: "";
+            background: #33495E;
+            width: 40%;
+            height: 8px;
+            position: absolute;
+            left: 0;
+            top: -15px;
+        }
+
+
+        .section-col h4 {
+            font-size: var(--font-size-regular);
+            color: var(--title-color);
+            font-family: var(--font-bold);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            position: relative !important;
+
+
+        }
+
+
+        @media only screen and (max-width: 500px) {
+            .container22 {
+                display: block !important;
+                justify-content: unset;
+                width: 100%;
+                align-items: center;
+                align-content: center;
+                height: 100% !important;
+                padding-left: 0px !important;
+            }
+
+            .container22 ul.navbar-nav.mt-2.mt-lg-0.main-menu.mr-auto.ml-auto {
+                margin-right: 0px !important;
+                margin-right: 0px !important;
+                display: block;
+                align-items: unset;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .marquee-sibling {
+                padding: 0;
+                background: #009b3e;
+                width: 35% !important;
+                height: 45px;
+                line-height: 42px;
+                font-size: 12px;
+                font-weight: normal;
+                color: #ffffff;
+                text-align: center;
+                float: left;
+                left: 0;
+                z-index: 2000;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    </style>
+    <script language="JavaScript">
+        /**
+         * Disable right-click of mouse, F12 key, and save key combinations on page
+         * By Arthur Gareginyan (arthurgareginyan@gmail.com)
+         * For full source code, visit https://mycyberuniverse.com
+         */
+        window.onload = function() {
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function(e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        };
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light home-top-nav">
+        <div class="container22">
+            <button class="navbar-toggler menu-btn no-outline" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" id="navbarMenuButton">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mr-md-auto" href="#">
+                <img class="logo d-lg-none" src="../frontend/images/logo/logo-mobile.svg" alt="Rx MiMS Bangladesh">
+                
+                <img style="width:180px;" class="logo d-none d-lg-block" src="../frontend/images/logo/Gv2.png" alt="Rx MiMS Bangladesh">
+            </a>
+            <button class="navbar-toggler menu-btn no-outline" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle navigation" id="navbarSearchButton">
+                <i class="fas fa-search"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <div class="container2222 d-flex navbar-container main-menu-top-bar">
+                    <ul class="navbar-nav mt-2 mt-lg-0 main-menu mr-auto ml-auto">
+                        <li id="mainMenuHome" class="nav-item">
+                            <a class="nav-link mims-nav-link home-link mims-main-menu" href="#">Home</a>
+                        </li>
+                        <li id="mainMenuDoctor" class="nav-item">
+                            <a class="nav-link mims-nav-link doctor-link mims-main-menu" href="#">Doctor</a>
+                        </li>
+                        <li id="mainMenuHerbal" class="nav-item">
+                            <a class="nav-link mims-nav-link herbal-link mims-main-menu" href="#">Herbal</a>
+                        </li>
+                        <li class="nav-item umesh" id="mainMenuResource">
+                            <a class="nav-link mims-nav-link resource-link mims-main-menu" href="#" id="navbarDropdownResource" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Journal
+                                <i class="icon-dropdown"></i>
+                            </a>
+                            <div class="dropdown-menu mims-dropdown-menu" aria-labelledby="navbarDropdownResource" style="min-width: 15rem">
+                                <a class="dropdown-item nav-link mims-nav-link" href="#">Cardiovascular</a>
+                                <a class="dropdown-item nav-link mims-nav-link" href="#">Dental</a>
+                                <a class="dropdown-item nav-link mims-nav-link" href="#">Library</a>
+                                <a class="dropdown-item nav-link mims-nav-link" href="#">Research Method</a>
+                                <a class="dropdown-item nav-link mims-nav-link" href="#">Resource</a>
+                                <div class="dropdown-divider"></div>
+
+
+
+                                <div class="rgmk">
+
+                                    
+                        <li class="nav-item umesh" id="mainMenuAbout">
+                            <a class="nav-link mims-nav-link about-link mims-main-menu" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                                <i class="icon-dropdown"></i>
+                            </a>
+                            <div class="dropdown-menu mims-dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                                <a class="dropdown-item nav-link mims-nav-link about-link" href="#">About Us</a>
+                                <a class="dropdown-item nav-link mims-nav-link about-link" href="#">Disclaimer</a>
+
+
+                                <a class="dropdown-item nav-link mims-nav-link about-link" href="#">Privacy Policy</a>
+
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <!-- <div class="left-links">
+                <a href="https://www.facebook.com/rxmimsbd" class="side-link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/rxmims" class="side-link" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div> -->
+
+                    <div class="form-inline my-2 my-lg-0 d-flex flex-row-reverse flex-lg-row justify-content-end" id="user-login-status">
+                        
+                           <a class="btn btn-success my-2 my-sm-0 mims-nav-link-cta-primary" href="#">User name</a>
+                            
+                            
+                            
+                            <a class="btn btn-success my-2 my-sm-0 mims-nav-link-cta-primary" href="#">Logout</a>';
+                        <a href="#" class="btn btn-success my-2 my-sm-0 mims-nav-link-cta-primary" style="
+                            margin: 0px 10px !important;
+                        "  onclick="UserObject.showLoginModal()">Login</a>
+                            
+                            
+                            
+                            <a href="#" class="btn btn-success my-2 my-sm-0 mims-nav-link-cta-primary">Register</a>';
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSearch">
+                <div class="navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" id="searchOptionInMobile">
+                        <div class="input-group-append">
+                            <button class="btn theme-btn" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="search-category-radio">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="brand" name="search-category" value="brand" class="custom-control-input" checked="checked" onclick="drugObject.changeSearchOption('brand')">
+                            <label class="custom-control-label" for="brand">Brand</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="generic" name="search-category" value="generic" class="custom-control-input" onclick="drugObject.changeSearchOption('generic')">
+                            <label class="custom-control-label" for="generic">Generic</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="indication" name="search-category" value="indication" class="custom-control-input" onclick="drugObject.changeSearchOption('indication')">
+                            <label class="custom-control-label" for="indication">Indication</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="manufacture" name="search-category" value="manufacture" class="custom-control-input" onclick="drugObject.changeSearchOption('manufacturer')">
+                            <label class="custom-control-label" for="manufacture">Manufacturer</label>
+                        </div>
+                        <p class="alphabets nav-aldphabets">
+                            <a onclick="drugObject.searchAlphabetically('a')" class="alphabet-link">A</a>
+                            <a onclick="drugObject.searchAlphabetically('b')" class="alphabet-link">B</a>
+                            <a onclick="drugObject.searchAlphabetically('c')" class="alphabet-link">C</a>
+                            <a onclick="drugObject.searchAlphabetically('d')" class="alphabet-link">D</a>
+                            <a onclick="drugObject.searchAlphabetically('e')" class="alphabet-link">E</a>
+                            <a onclick="drugObject.searchAlphabetically('f')" class="alphabet-link">F</a>
+                            <a onclick="drugObject.searchAlphabetically('g')" class="alphabet-link">G</a>
+                            <a onclick="drugObject.searchAlphabetically('h')" class="alphabet-link">H</a>
+                            <a onclick="drugObject.searchAlphabetically('i')" class="alphabet-link">I</a>
+                            <a onclick="drugObject.searchAlphabetically('j')" class="alphabet-link">J</a>
+                            <a onclick="drugObject.searchAlphabetically('k')" class="alphabet-link">K</a>
+                            <a onclick="drugObject.searchAlphabetically('l')" class="alphabet-link">L</a>
+                            <a onclick="drugObject.searchAlphabetically('m')" class="alphabet-link">M</a>
+                            <a onclick="drugObject.searchAlphabetically('n')" class="alphabet-link">N</a>
+                            <a onclick="drugObject.searchAlphabetically('o')" class="alphabet-link">O</a>
+                            <a onclick="drugObject.searchAlphabetically('p')" class="alphabet-link">P</a>
+                            <a onclick="drugObject.searchAlphabetically('q')" class="alphabet-link">Q</a>
+                            <a onclick="drugObject.searchAlphabetically('r')" class="alphabet-link">R</a>
+                            <a onclick="drugObject.searchAlphabetically('s')" class="alphabet-link">S</a>
+                            <a onclick="drugObject.searchAlphabetically('t')" class="alphabet-link">T</a>
+                            <a onclick="drugObject.searchAlphabetically('u')" class="alphabet-link">U</a>
+                            <a onclick="drugObject.searchAlphabetically('v')" class="alphabet-link">V</a>
+                            <a onclick="drugObject.searchAlphabetically('w')" class="alphabet-link">W</a>
+                            <a onclick="drugObject.searchAlphabetically('x')" class="alphabet-link">X</a>
+                            <a onclick="drugObject.searchAlphabetically('y')" class="alphabet-link">Y</a>
+                            <a onclick="drugObject.searchAlphabetically('z')" class="alphabet-link">Z</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '295945388066507',
+                status: true,
+                cookie: true,
+                xfbml: true
+            });
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.async = true;
+            e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    </script>
+    <!--<div id="fb-root"></div>-->
+    <!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=295945388066507&autoLogAppEvents=1"></script>-->
+
+
+<script>
+    var youTubeVideos = [];
+
+    var frontendCommonMethods = {
+        totalDrug: 0,
+        activeBrandAlphabet: '',
+        activeGenericAlphabet: '',
+        youtubeVideoIndex: '',
+        youtubeFullScreen: function(videoIndex) {
+            frontendCommonMethods.youtubeVideoIndex = videoIndex;
+            $('#youtube-fullScreen').html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + youTubeVideos[videoIndex].ID + '?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>');
+            $('#youtube-fullScreen').show();
+            $('#youtubeFullScreenModal').show();
+        },
+        closeYoutubeScreen: function() {
+            frontendCommonMethods.youtubeVideoIndex = '';
+            $('#youtube-fullScreen').html('');
+            $('#youtube-fullScreen').hide();
+            $('#youtubeFullScreenModal').hide();
+        },
+        facebookShare: function() {
+            if (frontendCommonMethods.youtubeVideoIndex != '') {
+                var videoID = youTubeVideos[frontendCommonMethods.youtubeVideoIndex].ID;
+                var videoTitle = youTubeVideos[frontendCommonMethods.youtubeVideoIndex].Title;
+                var videoThumbnail = youTubeVideos[frontendCommonMethods.youtubeVideoIndex].thumbnail;
+                var videoDescription = youTubeVideos[frontendCommonMethods.youtubeVideoIndex].Description;
+                FB.ui({
+                    method: 'feed',
+                    name: videoTitle,
+                    link: 'https://www.rxmimsbd.com/Video/getAllVideo?id=' + videoID,
+                    picture: videoThumbnail,
+                    caption: videoTitle,
+                    description: videoDescription,
+                    message: ""
+                });
+            }
+        },
+        changeForMobileUI: function() {
+            $('.main-menu-top-bar').css('height', '');
+        },
+        changeForDesktopUI: function() {
+            $('.main-menu-top-bar').css('height', '47px');
+        },
+        viewImage: function(img) {
+            var viewer = ImageViewer();
+            viewer.show(img);
+        },
+        mainMenuActivation: function(item) {
+            $('ul.main-menu li a').removeClass('active');
+            switch (item) {
+                case 'home':
+                    $('li#mainMenuHome a').addClass('active');
+                    break;
+                case 'doctor':
+                    $('li#mainMenuDoctor a').addClass('active');
+                    break;
+                case 'herbal':
+                    $('li#mainMenuHerbal a').addClass('active');
+                    break;
+                case 'resource':
+                    $('li#mainMenuResource a').addClass('active');
+                    break;
+                case 'about':
+                    $('li#mainMenuAbout a').addClass('active');
+                    break;
+                case 'ebook':
+                    $('li#mainMenuEbook a').addClass('active');
+                    break;
+                default:
+                    $('li#mainMenuHome a').addClass('active');
+                    break;
+            }
+        },
+        numberWithCommas: function(number) {
+            var parts = number.toString().split(".");
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return parts.join(".");
+        },
+        incrementVisitorCount: function() {
+            console.log('Method Name: frontendCommonMethods.getSideBarData Param:  Value: ' + [].toString());
+            var formURL = "#";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.incrementVisitorCount', function(data) {});
+        },
+        getNumberOfVisitor: function() {
+            console.log('Method Name: frontendCommonMethods.getNumberOfVisitor Param:  Value: ' + [].toString());
+            var formURL = "#";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.getNumberOfVisitor', function(totalVisitor) {
+                $('.visitor-count').html(frontendCommonMethods.numberWithCommas(totalVisitor));
+            });
+        },
+        getSideBarData: function(sideBarDataCategory) {
+            console.log('Method Name: frontendCommonMethods.getSideBarData Param:  Value: ' + [].toString());
+            $('div.sidebar-jobs').html('');
+            $('div.sidebar-news').html('');
+            $('div.sidebar-address').html('');
+            $('div.sidebar-special-reports').html('');
+            $('div.sidebar-mims-study').html('');
+
+            $('div.side-bar-job-circular-title').hide();
+            $('div.side-bar-news-title').hide();
+            $('div.side-bar-special-report-title').hide();
+            $('div.side-bar-mims-study-title').hide();
+            $('div.side-bar-important-address-title').hide();
+            var formURL = "#";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.getSideBarData', function(sideBarData) {
+                if (sideBarData) {
+                    var all_jobs1 = sideBarData.AllJobs[0];
+                    var all_jobs2 = sideBarData.AllJobs[1];
+                    var all_address = sideBarData.AllAddress;
+                    var all_news = sideBarData.AllNews;
+                    var all_special_reports = sideBarData.AllSpecialReports;
+                    var all_mims_study = sideBarData.AllMiMSLearning;
+
+                    if ($.inArray('job', sideBarDataCategory) > -1) {
+                        $('.side-bar-job-circular-title').show();
+                        var new_tag_html = '';
+                        var all_jobs = all_jobs1;
+                        for (var i = 0; i < all_jobs.length; i++) {
+                            new_tag_html = all_jobs[i].NumberOfDatePublished < 4 ? '<img src="#" style="max-width: 25px" alt="">' : '';
+                            var organization_logo = all_jobs[i].OrganizationLogo;
+                            organization_logo = organization_logo != null && organization_logo.length > 0 ? '#' + 'JobImages/' + organization_logo : '';
+                            var job_title = all_jobs[i].Title;
+                            job_title = job_title.length > 30 ? job_title.substr(0, 27) + '...' : job_title;
+                            $('div#pharmaTab div.sidebar-jobs').append('<div class="row job side-col">' +
+                                '                                <div class="col-3 pr-0" style="padding: 7px">' +
+                                '                                    <img class="job-img side-col" src="' + organization_logo + '" alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">' +
+                                '                                </div>' +
+                                '                                <div class="col-9" style="padding-right: 0; padding-left: 10px">' +
+                                '                                    <p class="job-title side-col"><a href="#' + all_jobs[i].ID + '">' + job_title + new_tag_html + '</a></p>' +
+                                '                                    <p class="job-company side-col">' + all_jobs[i].Organization + '</p>' +
+                                '                                </div>' +
+                                '                            </div>');
+                        }
+
+                        $('div#pharmaTab div.sidebar-jobs').append('<a href="#" class="side-col-see-more-btn no-outline">See All Jobs</a>');
+
+                        var all_jobs = all_jobs2;
+                        for (var i = 0; i < all_jobs.length; i++) {
+                            new_tag_html = all_jobs[i].NumberOfDatePublished < 4 ? '<img src="#" style="max-width: 25px" alt="">' : '';
+                            var organization_logo = all_jobs[i].OrganizationLogo;
+                            organization_logo = organization_logo != null && organization_logo.length > 0 ? '#' + 'JobImages/' + organization_logo : '';
+                            var job_title = all_jobs[i].Title;
+                            job_title = job_title.length > 30 ? job_title.substr(0, 27) + '...' : job_title;
+                            $('div#medicalTab div.sidebar-jobs').append('<div class="row job side-col">' +
+                                '                                <div class="col-3 pr-0" style="padding: 7px">' +
+                                '                                    <img class="job-img side-col" src="' + organization_logo + '" alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">' +
+                                '                                </div>' +
+                                '                                <div class="col-9" style="padding-right: 0; padding-left: 10px">' +
+                                '                                    <p class="job-title side-col"><a href="#' + all_jobs[i].ID + '">' + job_title + new_tag_html + '</a></p>' +
+                                '                                    <p class="job-company side-col">' + all_jobs[i].Organization + '</p>' +
+                                '                                </div>' +
+                                '                            </div>');
+                        }
+
+                        $('div#medicalTab div.sidebar-jobs').append('<a href="#" class="side-col-see-more-btn no-outline">See All Jobs</a>');
+                    }
+
+                    if ($.inArray('address', sideBarDataCategory) > -1) {
+                        $('.side-bar-important-address-title').show();
+                        for (var i = 0; i < all_address.length; i++) {
+                            $('ul.sidebar-assress').append('<li class="address"><a href="#' + all_address[i].ID + '">' + all_address[i].Name + '</a></li>');
+                        }
+
+                        $('ul.sidebar-assress').append('<a href="#" class="see-more-btn no-outline">See All Adresses</a>');
+                    }
+
+                    if ($.inArray('news', sideBarDataCategory) > -1) {
+                        $('.side-bar-news-title').show();
+                        for (var i = 0; i < all_news.length; i++) {
+                            var news_image_path = all_news[i].ImagePath;
+                            news_image_path = news_image_path != null && news_image_path.length > 0 ? '#' + 'NewsImages/' + news_image_path : '';
+                            var news_title = all_news[i].Title;
+                            news_title = news_title.length > 30 ? news_title.substr(0, 27) + '...' : news_title;
+                            $('div.sidebar-news').append('<div class="row news">' +
+                                '                                <div class="col-3" style="padding: 5px; padding-left: 16px;">' +
+                                '                                    <img class="news-img" style="width: 100%; height: auto; padding: 0;" src="' + news_image_path + '" alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">' +
+                                '                                </div>' +
+                                '                                <div class="col-9" style="padding-right: 0; padding-left: 7px">' +
+                                '                                    <p class="news-title side-col"><a href="#' + all_news[i].ID + '">' + news_title + '</a></p>' +
+                                '                                </div>' +
+                                '                            </div>');
+                        }
+
+                        $('div.sidebar-news').append('<a href="#" class="side-col-see-more-btn no-outline">See All News</a>');
+                    }
+
+                    if ($.inArray('report', sideBarDataCategory) > -1) {
+                        $('.side-bar-special-report-title').show();
+                        for (var i = 0; i < all_special_reports.length; i++) {
+                            var report_image = all_special_reports[i].ImagePath;
+                            report_image = report_image.length > 0 ? '#' + 'SpecialReportImages/' + report_image : '';
+                            var report_title = all_special_reports[i].Title;
+                            report_title = report_title.length > 30 ? report_title.substr(0, 27) + '...' : report_title;
+                            $('div.sidebar-special-reports').append('<div class="row news">' +
+                                '                                <div class="col-3" style="padding: 5px; padding-left: 16px;">' +
+                                '                                    <img class="news-img" style="width: 100%; height: auto; padding: 0;" src="' + report_image + '" alt="">' +
+                                '                                </div>' +
+                                '                                <div class="col-9" style="padding-right: 0; padding-left: 7px">' +
+                                '                                    <p class="news-title side-col"><a href="#' + all_special_reports[i].ID + '">' + report_title + '</a></p>' +
+                                '                                </div>' +
+                                '                            </div>');
+                        }
+
+                        $('div.sidebar-special-reports').append('<a href="#" class="side-col-see-more-btn no-outline">See All Reports</a>');
+                    }
+
+                    if ($.inArray('study', sideBarDataCategory) > -1) {
+                        $('.side-bar-mimslearning-title').show();
+                        for (var i = 0; i < all_mims_study.length; i++) {
+                            report_image = 'application/views/images/icons/mims-learning.png';
+                            var report_title = all_mims_study[i].Title;
+                            report_title = report_title.length > 30 ? report_title.substr(0, 27) + '...' : report_title;
+                            $('div.sidebar-mimslearning').append('<div class="row news">' +
+                                '                                <div class="col-3" style="padding: 5px; padding-left: 16px;">' +
+                                '                                    <img class="news-img" style="width: 32px; height: auto; padding: 0;" src="' + report_image + '" alt="">' +
+                                '                                </div>' +
+                                '                                <div class="col-9" style="padding-right: 0; padding-left: 7px">' +
+                                '                                    <p class="news-title side-col" style="margin:5px 0px 0px 0px;"><a href="#' + all_mims_study[i].ID + '">' + report_title + '</a></p>' +
+                                '                                </div>' +
+                                '                            </div>');
+                        }
+
+                        $('div.sidebar-mimslearning').append('<a href="#" class="side-col-see-more-btn no-outline">See All Reports</a>');
+                    }
+                }
+            });
+        },
+        searchBrandAlphabetically: function(alphabet, pageNo) {
+            console.log('Method Name: frontendCommonMethods.searchBrandAlphabetically Param: allProduct Value: ' + [alphabet, pageNo].toString());
+            frontendCommonMethods.activeBrandAlphabet = alphabet;
+            var formURL = "#" + '?Alphabet=' + alphabet + '&PageNo=' + pageNo;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.searchBrandAlphabetically', function(brandData) {
+                if (brandData) {
+                    var drug_td_text = '';
+                    for (var i = 0; i < brandData.length; i++) {
+                        drug_td_text = '<tr>' +
+                            '<td><a href="#' + '?DrugID=' + brandData[i].DrugID + '">' + brandData[i].BrandName + '</a></td>' +
+                            '<td><a href="#' + '?ManufacturerID=' + brandData[i].ManufacturerID + '">' + brandData[i].ManufacturerName + '</a></td>' +
+                            '</tr>';
+                        $('tbody.drug-list').append(drug_td_text);
+                    }
+                }
+            });
+            frontendCommonMethods.populatePagination('brand', pageNo);
+        },
+        searchGenericAlphabetically: function(alphabet, pageNo) {
+            console.log('Method Name: frontendCommonMethods.searchGenericAlphabetically Param: allProduct Value: ' + [alphabet, pageNo].toString());
+            frontendCommonMethods.activeGenericAlphabet = alphabet;
+            var formURL = "#" + '?Alphabet=' + alphabet + '&PageNo=' + pageNo;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.searchGenericAlphabetically', function(brandData) {
+                if (brandData) {
+                    var drug_td_text = '';
+                    for (var i = 0; i < brandData.length; i++) {
+                        drug_td_text = '<tr>' +
+                            '<td><a href="#' + '?DrugID=' + brandData[i].DrugID + '">' + brandData[i].BrandName + '</a></td>' +
+                            '<td><a href="#' + '?ManufacturerID=' + brandData[i].ManufacturerID + '">' + brandData[i].ManufacturerName + '</a></td>' +
+                            '</tr>';
+                        $('tbody.drug-list').append(drug_td_text);
+                    }
+                }
+            });
+            frontendCommonMethods.populatePagination('generic', pageNo);
+        },
+        setAdvertisementInterval: function(className) {
+            $('div.' + className + ' > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        },
+        getCommonAdvertisement: function(classNames) {
+            console.log('Method Name: frontendCommonMethods.getCommonAdvertisement Param: classNames Value: ' + [classNames].toString());
+            for (var class_no = 0; class_no < classNames.length; class_no++) {
+                var class_name = classNames[class_no];
+                $('.' + class_name).html('');
+                var formURL = "#" + class_name;
+                mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.getAdvertisement', function(advertisementData) {
+                    if (advertisementData.length) {
+                        var position_class_name = advertisementData[0].ClassName;
+                        var img_style = '';
+                        var link_url = advertisementData[0].LinkURL == '' ? '#' : advertisementData[0].LinkURL;
+
+                        if (advertisementData.length) {
+                            if (position_class_name.indexOf('advert-container-top')) {
+                                img_style = 'style="max-width: 1110px;max-height: 140px;"';
+                            } else if (position_class_name.indexOf('advert-container-mid')) {
+                                img_style = 'style="max-width: 1110px;max-height: 140px;"';
+                            } else if (position_class_name.indexOf('advert-bottom')) {
+                                img_style = 'style="max-width: 1110px;max-height: 140px;"';
+                            } else if (position_class_name.indexOf('advert-top-left')) {
+                                img_style = 'style="max-width: 540px;max-height: 130px;"';
+                            } else if (position_class_name.indexOf('advert-top-right')) {
+                                img_style = 'style="max-width: 540px;max-height: 130px;"';
+                            } else if (position_class_name.indexOf('sidebar-advert')) {
+                                img_style = 'style="max-width: 350px;max-height: 350px;"';
+                            }
+                            $('.' + advertisementData[0].ClassName).append('<a href="' + link_url + '" class="advert no-outline"><img src="#' + advertisementData[0].ImagePath + '" alt="" ' + img_style + '></a>');
+                        }
+                    }
+                });
+            }
+        },
+        showFullScreenAdvertisement: function(position) {
+            console.log('Method Name: frontendCommonMethods.showFullScreenAdvertisement Param: positionID Value: ' + [position].toString());
+            var formURL = "#" + position;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.showFullScreenAdvertisement', function(advertisementData) {
+
+            });
+        },
+        getCategoryWiseAdvertisement: function(categoryID, categoryValue, classNames) {
+            
+            console.log('Method Name: frontendCommonMethods.getCategoryWiseAdvertisement Param: classNames Value: ' + [classNames].toString());
+            for (var class_no = 0; class_no < classNames.length; class_no++) {
+                var class_name = classNames[class_no];
+                $('.' + class_name).html('');
+                var formURL = "#" + class_name + '&CategoryID=' + categoryID + '&CategoryValue=' + categoryValue;
+                mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.getAdvertisement', function(advertisementData) {
+                    
+                    if (advertisementData[0].ImagePath == undefined) {
+                       // alert('ravi 1');
+                        frontendCommonMethods.getCommonAdvertisement([advertisementData[0].ClassName]);
+                    } else {
+                        alert(advertisementData);
+                        $('.' + advertisementData[0].ClassName).append('<img src="#' + advertisementData[0].ImagePath + '" alt="">');
+                    }
+                });
+            }
+        },
+        getCategoryWiseAdvertisementForSlider: function(categoryID, categoryValue, classNames) {
+            console.log('Method Name: frontendCommonMethods.getCategoryWiseAdvertisement Param: classNames Value: ' + [classNames].toString());
+            for (var class_no = 0; class_no < classNames.length; class_no++) {
+                var class_name = classNames[class_no];
+                $('.' + class_name).html('');
+                var formURL = "#" + class_name + '&CategoryID=' + categoryID + '&CategoryValue=' + categoryValue;
+                mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.getAdvertisementForSlider', function(advertisementData) {
+                    if (typeof advertisementData[0].ImagePath !== 'undefined') {
+                        for (var ads_index = 0; ads_index < advertisementData.length; ads_index++) {
+                            $('.' + class_name).append('<img src="#' + advertisementData[ads_index].ImagePath + '" alt="">');
+                        }
+
+                        $('.' + class_name).slick({
+                            slidesToScroll: 1,
+                            slidesToShow: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            infinite: true,
+                            arrows: false,
+                            responsive: [{
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                }
+                            }]
+                        });
+                    }
+                });
+            }
+        },
+        getAdvertisement: function(classNames, slidesToShow) {
+            console.log('Method Name: frontendCommonMethods.getAdvertisement Param: classNames Value: ' + [classNames].toString());
+            for (var class_no = 0; class_no < classNames.length; class_no++) {
+                var class_name = classNames[class_no];
+                $('#' + class_name).hide();
+                var formURL = "#" + class_name;
+                mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'frontendCommonMethods.getAdvertisement', function(advertisementData) {
+                    if (advertisementData.length) {
+                        var image_class = '';
+                        var position_class_name = advertisementData[0].ClassName;
+                        var interval = advertisementData[0].Interval;
+                        switch (position_class_name) {
+                            case 'home-product-slider':
+                                image_class = 'home-product-slide';
+                                break;
+                            case 'ebook-top-slider':
+                                image_class = 'ebook-top-slide';
+                                break;
+                            case 'ebook-bottom-slider':
+                                image_class = 'ebook-bottom-slide';
+                                break;
+                            case 'mims-learning-top-slider':
+                                image_class = 'mims-learning-top-slide';
+                                break;
+                            case 'mims-learning-bottom-slider':
+                                image_class = 'mims-learning-bottom-slide';
+                                break;
+                            default:
+                                break;
+                        }
+                        $('#' + position_class_name).html('');
+                        for (var advertisement_no = 0; advertisement_no < advertisementData.length; advertisement_no++) {
+                            $('#' + position_class_name).append('<div class="' + image_class + '">' +
+                                '<img src="#' + advertisementData[advertisement_no].ImagePath + '" alt="">' +
+                                '</div>');
+                        }
+                        $('#' + class_name).show();
+                        switch (position_class_name) {
+                            case 'home-product-slider':
+                            case 'ebook-top-slider':
+                            case 'ebook-bottom-slider':
+                            case 'mims-learning-top-slider':
+                            case 'mims-learning-bottom-slider':
+                                $('#' + class_name).slick({
+                                    slidesToScroll: 1,
+                                    slidesToShow: slidesToShow,
+                                    autoplay: true,
+                                    autoplaySpeed: 3000,
+                                    infinite: true,
+                                    arrows: false,
+                                    responsive: [{
+                                        breakpoint: 480,
+                                        settings: {
+                                            slidesToShow: 2,
+                                        }
+                                    }]
+                                });
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                });
+            }
+        },
+        inArrayCaseInsensitive: function(value, dataArray) {
+            var index = -1;
+            value = value.toLowerCase();
+            for (var i = 0; i < dataArray.length; i++) {
+                if (value == $.trim(dataArray[i].toLowerCase())) {
+                    index = i;
+                    break;
+                }
+            }
+
+            return index;
+        },
+        autocomplete: function(inp, arr) {
+            /*the autocomplete function takes two arguments,
+	  the text field element and an array of possible autocompleted values:*/
+            var currentFocus;
+            /*execute a function when someone writes in the text field:*/
+            inp.addEventListener("input", function(e) {
+                var a, b, i, val = this.value;
+                /*close any already open lists of autocompleted values*/
+                closeAllLists();
+                if (!val) {
+                    return false;
+                }
+                currentFocus = -1;
+                /*create a DIV element that will contain the items (values):*/
+                a = document.createElement("DIV");
+                a.setAttribute("id", this.id + "autocomplete-list");
+                a.setAttribute("class", "autocomplete-items");
+                /*append the DIV element as a child of the autocomplete container:*/
+                this.parentNode.appendChild(a);
+                /*for each item in the array...*/
+                var search_count = 0;
+                for (i = 0; i < arr.length; i++) {
+                    /*check if the item starts with the same letters as the text field value:*/
+                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                        /*create a DIV element for each matching element:*/
+                        b = document.createElement("DIV");
+                        /*make the matching letters bold:*/
+                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                        b.innerHTML += arr[i].substr(val.length);
+                        /*insert a input field that will hold the current array item's value:*/
+                        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                        /*execute a function when someone clicks on the item value (DIV element):*/
+                        b.addEventListener("click", function(e) {
+                            /*insert the value for the autocomplete text field:*/
+                            inp.value = this.getElementsByTagName("input")[0].value;
+                            /*close the list of autocompleted values,
+                            (or any other open lists of autocompleted values:*/
+                            closeAllLists();
+                        });
+                        a.appendChild(b);
+                        if (search_count == 10) break;
+                        search_count++;
+                    }
+                }
+            });
+            /*execute a function presses a key on the keyboard:*/
+            inp.addEventListener("keydown", function(e) {
+                var x = document.getElementById(this.id + "autocomplete-list");
+                if (x) x = x.getElementsByTagName("div");
+                if (e.keyCode == 40) {
+                    /*If the arrow DOWN key is pressed,
+                    increase the currentFocus variable:*/
+                    currentFocus++;
+                    /*and and make the current item more visible:*/
+                    addActive(x);
+                } else if (e.keyCode == 38) { //up
+                    /*If the arrow UP key is pressed,
+                    decrease the currentFocus variable:*/
+                    currentFocus--;
+                    /*and and make the current item more visible:*/
+                    addActive(x);
+                } else if (e.keyCode == 13) {
+                    /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                    e.preventDefault();
+                    if (currentFocus > -1) {
+                        /*and simulate a click on the "active" item:*/
+                        if (x) x[currentFocus].click();
+                    }
+                }
+            });
+
+            function addActive(x) {
+                /*a function to classify an item as "active":*/
+                if (!x) return false;
+                /*start by removing the "active" class on all items:*/
+                removeActive(x);
+                if (currentFocus >= x.length) currentFocus = 0;
+                if (currentFocus < 0) currentFocus = (x.length - 1);
+                /*add class "autocomplete-active":*/
+                x[currentFocus].classList.add("autocomplete-active");
+            }
+
+            function removeActive(x) {
+                /*a function to remove the "active" class from all autocomplete items:*/
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("autocomplete-active");
+                }
+            }
+
+            function closeAllLists(elmnt) {
+                /*close all autocomplete lists in the document,
+                except the one passed as an argument:*/
+                var x = document.getElementsByClassName("autocomplete-items");
+                for (var i = 0; i < x.length; i++) {
+                    if (elmnt != x[i] && elmnt != inp) {
+                        x[i].parentNode.removeChild(x[i]);
+                    }
+                }
+            }
+            /*execute a function when someone clicks in the document:*/
+            document.addEventListener("click", function(e) {
+                closeAllLists(e.target);
+                // console.log('Value: '+$('#searchDrugOption').val());
+                // alert($('#searchDrugOption').val());
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    drugObject.searchBrandInformation($('#searchOptionInMobile').val());
+                } else {
+                    drugObject.searchBrandInformation($('#searchDrugOption').val());
+                }
+            });
+        },
+        isValidEmail: function(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+    }
+
+    frontendCommonMethods.totalDrug = 0;
+</script>
+
+    <!-- /Header  -->
+
+
+
+
+<script>
+    var drugObject = {
+    	searchObjectID: '',
+        searchOptionType: 'brand',
+        searchOptionTypeForNewInformation: '',
+        searchOptionValue: '',
+        perPageInformationNumber: '',
+        searchOptionForBrand: [],
+        searchOptionForGeneric: [],
+        searchOptionForIndication: [],
+        searchOptionForManufacturer: [],
+        searchManufacturerBrandOption: '',
+        totalDrug: 0,
+		productType: '',
+        getJobCirculars: function() {
+            console.log('Method Name: drugObject.getJobCirculars Param:  Value: '+[].toString());
+            var formURL = "#";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getJobCirculars', function(jobData) {
+                if (jobData) {
+                    var jobData1 = jobData[0];
+                    var jobData2 = jobData[1];
+                    var new_tag_html = '';
+                    var individual_job = '';
+                    for (var job_no = 0; job_no < jobData1.length; job_no++) {
+                        new_tag_html = jobData1[job_no].NumberOfDatePublished < 4 ? '<img src="#" style="max-width: 37px" alt="">' : '';
+                        var logo_path = jobData1[job_no].OrganizationLogo == '' || jobData1[job_no].OrganizationLogo == null ? '' : '#'+'JobImages/'+jobData1[job_no].OrganizationLogo;
+                        individual_job = '<div class="row job">' +
+                            '<div class="col-2">' +
+                            '<img class="job-img" src="'+logo_path+'" alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">'+
+                            '</div>'+
+                            '<div class="col-10">'+
+                            '<p class="job-title"><a href="#'+jobData1[job_no].ID+'">'+jobData1[job_no].Title+new_tag_html+'</a></p>'+
+                            '<p class="job-company">'+jobData1[job_no].Organization+'</p>'+
+                            '</div>'+
+                            '<img class="right-arrow" src="images/icons/right-arrow.svg" alt=">">'+
+                            '</div>';
+
+                        $('div#pharmaTab div.home-job-circular-list').append(individual_job);
+                    }
+
+                    var new_tag_html = '';
+                    var individual_job = '';
+                    for (var job_no = 0; job_no < jobData2.length; job_no++) {
+                        new_tag_html = jobData2[job_no].NumberOfDatePublished < 4 ? '<img src="#" style="max-width: 37px" alt="">' : '';
+                        var logo_path = jobData2[job_no].OrganizationLogo == '' || jobData2[job_no].OrganizationLogo == null ? '' : '#'+'JobImages/'+jobData2[job_no].OrganizationLogo;
+                        individual_job = '<div class="row job">' +
+                            '<div class="col-2">' +
+                            '<img class="job-img" src="'+logo_path+'" alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">'+
+                            '</div>'+
+                            '<div class="col-10">'+
+                            '<p class="job-title"><a href="#'+jobData2[job_no].ID+'">'+jobData2[job_no].Title+new_tag_html+'</a></p>'+
+                            '<p class="job-company">'+jobData2[job_no].Organization+'</p>'+
+                            '</div>'+
+                            '<img class="right-arrow" src="images/icons/right-arrow.svg" alt=">">'+
+                            '</div>';
+
+                        $('div#medicalTab div.home-job-circular-list').append(individual_job);
+                    }
+                }
+            });
+        },
+        getLocalNews: function() {
+            console.log('Method Name: drugObject.getLocalNews Param:  Value: '+[].toString());
+            var formURL = "#";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getLocalNews', function(newsData) {
+                if (newsData) {
+                    var individual_news = '';
+                    for (var news_no = 0; news_no < newsData.length; news_no++) {
+                        var news_description = newsData[news_no].Description;
+                        news_description = news_description.length > 65 ? news_description.substr(0, 60) + '...' : news_description;
+                        individual_news = '<div class="row news home-news">' +
+                            '<div class="col-4 pr-0">' +
+                            '<img class="news-img" src="NewsImages/'+newsData[news_no].ImagePath+'" alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">'+
+                            '</div>'+
+                            '<div class="col-8">'+
+                            '<p class="news-title"><a href="'+newsData[news_no].ID+'">'+newsData[news_no].Title+'</a></p>'+
+                            '<p class="news-description d-md-block d-none">'+news_description+'</p>'+
+                            '</div>'+
+                            '</div>';
+
+                        $('.home-local-news-list').append(individual_news);
+                    }
+                }
+            });
+        },
+        getSpecialReports: function() {
+            console.log('Method Name: drugObject.getSpecialReports Param:  Value: '+[].toString());
+            var formURL = "";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getSpecialReports', function(specialReportData) {
+                if (specialReportData) {
+                    var individual_special_report = '';
+                    var special_report_title = '';
+                    for (var special_report_no = 0; special_report_no < specialReportData.length; special_report_no++) {
+                        special_report_title = specialReportData[special_report_no].Title;
+                        special_report_title = special_report_title.length > 65 ? special_report_title.substr(0, 60) + ' ...' : special_report_title;
+                        individual_special_report = '<div class="home-special-report-slide">' +
+                            '<img src="SpecialReportImages/'+specialReportData[special_report_no].ImagePath+'"  alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">'+
+                            '<p class="home-special-report-slide-title"><a href="'+specialReportData[special_report_no].ID+'">'+special_report_title+'</p>'+
+                            '</div>';
+
+                        $('.home-special-report-list').append(individual_special_report);
+                    }
+
+                    $('#home-special-report-slider').slick({
+                        slidesToScroll: 1,
+                        slidesToShow: 4,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        infinite: false,
+                        arrows: true,
+                        responsive: [
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 2,
+                                    arrows: false,
+                                }
+                            }
+                        ]
+                    });
+                }
+            });
+        },
+        getMimsStudy: function() {
+            console.log('Method Name: drugObject.getMimsStudy Param:  Value: '+[].toString());
+            var formURL = "";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getMimsStudy', function(specialReportData) {
+                if (specialReportData) {
+                    var individual_special_report = '';
+                    var mims_study_title = '';
+                    for (var mims_study_no = 0; mims_study_no < specialReportData.length; mims_study_no++) {
+                        mims_study_title = specialReportData[mims_study_no].Title;
+                        mims_study_title = mims_study_title.length > 65 ? mims_study_title.substr(0, 60) + ' ...' : mims_study_title;
+                        individual_special_report = '<div class="home-mims-study-slide">' +
+                            '<img src="MimsStudyImages/'+specialReportData[mims_study_no].ImagePath+'"  alt="" onerror="this.src=\'https://image.ibb.co/cBMMNq/default-placeholder.png\'">'+
+                            '<p class="home-mims-study-slide-title"><a href="#'+specialReportData[mims_study_no].ID+'">'+mims_study_title+'</p>'+
+                            '</div>';
+
+                        $('.home-mims-study-list').append(individual_special_report);
+                    }
+
+                    $('#home-mims-study-slider').slick({
+                        slidesToScroll: 1,
+                        slidesToShow: 4,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        infinite: false,
+                        arrows: true,
+                        responsive: [
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 2,
+                                    arrows: false,
+                                }
+                            }
+                        ]
+                    });
+                }
+            });
+        },
+        getMimsLearning: function() {
+            console.log('Method Name: drugObject.getMimsLearning Param:');
+            var formURL = "#";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getMimsLearning', function(learningData) {
+                if (learningData) {
+                    var individual_learning = '';
+                    var mimslearning_title = '';
+                    for (var mimslearning_no = 0; mimslearning_no < learningData.length; mimslearning_no++) {
+                        mimslearning_title = learningData[mimslearning_no].Title;
+                        mimslearning_title = mimslearning_title.length > 125 ? mimslearning_title.substr(0, 120) + ' ...' : mimslearning_title;
+                        if (learningData[mimslearning_no].MiMSLearningType == 'pdf') {
+							individual_learning = '<a class="mimslearning row d-flex align-items-center" target="_blank" href="#?MiMSLearningID='+learningData[mimslearning_no].ID+'" style="padding: 0px 0px 0px 20px;"> ' +
+								'<div class="mimslearning-icon d-md-flex d-none" style="margin: 10px 0px;"><span><img src="application/views/images/icons/mims-learning.png" style="width: 32px; height: 32px;"></span></div>' +
+								'<div class="mimslearning-info">' +
+								'<p class="mimslearning-name">'+mimslearning_title+'</p>' +
+								'</div>' +
+								'</a>';
+						} else if (learningData[mimslearning_no].MiMSLearningType == 'link') {
+							individual_learning = '<a class="mimslearning row d-flex align-items-center" target="_blank" href="'+learningData[mimslearning_no].MiMSLearningPath+'">' +
+								'<div class="mimslearning-icon d-md-flex d-none"><span><img src="application/views/images/icons/mims-learning.png" style="width: 32px; height: 32px;"></span></div>' +
+								'<div class="mimslearning-info">' +
+								'<p class="mimslearning-name">'+mimslearning_title+'</p>' +
+								'</div>' +
+								'</a>';
+                        }
+
+                        $('.home-mimslearning-list').append(individual_learning);
+                    }
+                }
+            });
+        },
+        getInternationalHealth: function() {
+            console.log('Method Name: drugObject.getInternationalHealth Param:  Value: '+[].toString());
+            $('#internationalHealthList').html('');
+            var formURL = "#";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getInternationalHealth', function(internationalHealthData) {
+                if (internationalHealthData) {
+                    var individual_international_health = '';
+                    var news_description = '';
+                    for (var international_health_no = 0; international_health_no < internationalHealthData.length; international_health_no++) {
+                        news_description = internationalHealthData[international_health_no].Description;
+                        news_description = news_description.length > 500 ? news_description.substr(0, 500) + '...' : news_description;
+                        individual_international_health = '<div class="row job">' +
+                            '                        <div class="col-12">' +
+                            '                            <p class="job-title">'+internationalHealthData[international_health_no].Title+'</p>' +
+                            '                            <p class="job-company">'+news_description+'</p>' +
+                            '                        </div>' +
+                            '                        <a href="'+internationalHealthData[international_health_no].ID+'"><img class="right-arrow" src="/views/images/icons/right-arrow.svg" alt=">"></a>' +
+                            '                    </div>';
+                        $('#internationalHealthList').append(individual_international_health);
+                    }
+                }
+            });
+        },
+        getImportantAddress: function() {
+            console.log('Method Name: drugObject.getImportantAddress Param:  Value: '+[].toString());
+            var formURL = ">";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getImportantAddress', function(addressData) {
+                if (addressData) {
+                    var individual_address = '';
+                    for (var address_no = 0; address_no < addressData.length; address_no++) {
+                        individual_address = '<li class="address"><a href="'+addressData[address_no].ID+'">'+addressData[address_no].Name+'</a></li>';
+                        $('ul.home-address-list').append(individual_address);
+                    }
+
+                    if (addressData.length) {
+                        $('ul.home-address-list').append('<a href="" class="see-more-btn no-outline">See All Addresses</a>');
+                    }
+                }
+            });
+        },
+        getResources: function() {
+            console.log('Method Name: drugObject.getResources Param:  Value: '+[].toString());
+            var formURL = "";
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getResources', function(resourceData) {
+                if (resourceData) {
+                    var individual_resource = '';
+                    for (var resource_no = 0; resource_no < resourceData.length; resource_no++) {
+                        individual_resource = '<li class="resource-item"><a target="_blank" href="'+resourceData[resource_no].ID+'">'+resourceData[resource_no].Title+'</a></li>';
+                        $('ul.resource-item-list').append(individual_resource);
+                    }
+
+                    if (resourceData.length) {
+                        $('ul.resource-item-list').append('<a href="" class="see-more-btn no-outline">See All Resources</a>');
+                    }
+                }
+            });
+        },
+        getManufacturerBrand: function(objectID, searchOption){
+            $('li.search-manufacturer-option').removeClass('active');
+            $('li.search-manufacturer-option-'+searchOption).addClass('active');
+            drugObject.searchManufacturerBrandOption = searchOption;
+            drugObject.searchOptionType = 'manufacturer';
+            var formURL = ""+drugObject.searchOptionValue+'&ManufacturerBrandOption='+drugObject.searchManufacturerBrandOption+'&ProductType='+drugObject.productType;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getFeatureProducts', function(drugData){
+                drugObject.totalDrug = drugData;
+                drugObject.getSearchResult(1);
+                drugObject.populatePagination(objectID, 1);
+            });
+        },
+        getSearchResult: function(pageNo, objectID, optionType, optionValue) {
+			drugObject.searchObjectID = objectID === undefined ? drugObject.searchObjectID : objectID;
+			drugObject.searchOptionType = optionType === undefined ? drugObject.searchOptionType : optionType;
+			drugObject.searchOptionValue = optionValue === undefined ? drugObject.searchOptionValue : optionValue;
+			var formURL = ""+drugObject.searchOptionType+'&Value='+encodeURIComponent(drugObject.searchOptionValue)+'&PageNo='+pageNo+'&ManufacturerBrandOption='+drugObject.searchManufacturerBrandOption+'&ProductType='+drugObject.productType;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getFeatureProducts', function(drugData){
+                if (drugData) {
+                    switch (drugObject.searchOptionType) {
+                        case 'brand':
+                        case 'brand_by_alphabetically':
+                            $('tbody.drug-list').html('');
+                            for(var i = 0; i < drugData.length; i++) {
+                                $('tbody.drug-list').append('<tr>');
+                                $('tbody.drug-list').append('<td><a href="'+drugData[i].ID+'">'+drugData[i].Name+'</a></td>');
+                                $('tbody.drug-list').append('<td>'+drugData[i].DosageForm+'</td>');
+                                $('tbody.drug-list').append('<td>'+drugData[i].StrengthName+'</td>');
+                                $('tbody.drug-list').append('<td>'+drugData[i].PackSize+'</td>');
+                                $('tbody.drug-list').append('<td>'+drugData[i].PriceInBDT+' Tk</td>');
+                                $('tbody.drug-list').append('</tr>');
+                            }
+                            break;
+                        case 'generic':
+                            $('tbody.generic-list').html('');
+                            for(var i = 0; i < drugData.length; i++) {
+                                $('tbody.generic-list').append('<tr>');
+                                $('tbody.generic-list').append('<td><a href="'+encodeURIComponent(drugData[i].Name)+'&ProductType='+drugObject.productType+'">'+drugData[i].Name+'</a></td>');
+                                $('tbody.generic-list').append('<td>'+drugData[i].ManufacturerName+'</td>');
+                                $('tbody.generic-list').append('</tr>');
+                            }
+                            break;
+                        case 'generic_by_alphabetically':
+                            $('tbody.generic-alphabetically-list').html('');
+                            for(var i = 0; i < drugData.length; i++) {
+                                $('tbody.generic-alphabetically-list').append('<tr>');
+                                $('tbody.generic-alphabetically-list').append('<td><a href="#'+encodeURIComponent(drugData[i].Name)+'&ProductType='+drugObject.productType+'">'+drugData[i].Name+'</a></td>');
+                                $('tbody.generic-alphabetically-list').append('<td><a href="#'+encodeURIComponent(drugData[i].GenericName)+'&ProductType='+drugObject.productType+'">'+drugData[i].GenericName+'</a></td>');
+                                $('tbody.generic-alphabetically-list').append('<td><a href="#'+encodeURIComponent(drugData[i].ManufacturerName)+'&ProductType='+drugObject.productType+'">'+drugData[i].ManufacturerName+'</a></td>');
+                                $('tbody.generic-alphabetically-list').append('</tr>');
+                            }
+                            break;
+                        case 'indication':
+                            $('tbody.indication-list').html('');
+                            for(var i = 0; i < drugData.length; i++) {
+                                $('tbody.indication-list').append('<tr>');
+                                $('tbody.indication-list').append('<td><a href="'+encodeURIComponent(drugData[i].Name)+'&ProductType='+drugObject.productType+'">'+drugData[i].Name+'</a></td>');
+                                $('tbody.indication-list').append('<td><a href="'+encodeURIComponent(drugData[i].GenericName)+'&ProductType='+drugObject.productType+'">'+drugData[i].GenericName+'</a></td>');
+                                $('tbody.indication-list').append('<td><a href="'+encodeURIComponent(drugData[i].ManufacturerName)+'&ProductType='+drugObject.productType+'">'+drugData[i].ManufacturerName+'</a></td>');
+                                $('tbody.indication-list').append('</tr>');
+                            }
+                            break;
+                        case 'manufacturer':
+                            $('tbody.manufacturer-list').html('');
+                            for(var i = 0; i < drugData.length; i++) {
+                                $('tbody.manufacturer-list').append('<tr>');
+                                $('tbody.manufacturer-list').append('<td><a href="'+encodeURIComponent(drugData[i].Name)+'&ProductType='+drugObject.productType+'">'+drugData[i].Name+'</a></td>');
+                                $('tbody.manufacturer-list').append('<td><a href="'+encodeURIComponent(drugData[i].GenericName)+'&ProductType='+drugObject.productType+'">'+drugData[i].GenericName+'</a></td>');
+                                $('tbody.manufacturer-list').append('</tr>');
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                } else {
+                    switch (drugObject.searchOptionType) {
+                        case 'brand':
+                        case 'brand_by_alphabetically':
+                            $('tbody.drug-list').html('');
+                            break;
+                        case 'generic':
+                            $('tbody.generic-list').html('');
+                            break;
+                        case 'generic_by_alphabetically':
+                            $('tbody.generic-alphabetically-list').html('');
+                            break;
+                        case 'indication':
+                            $('tbody.indication-list').html('');
+                            break;
+                        case 'manufacturer':
+                            $('tbody.manufacturer-list').html('');
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            });
+        },
+        getNewInformation: function(pageNo) {
+            
+            var formURL = ""+drugObject.searchOptionTypeForNewInformation+'&PageNo='+pageNo;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getNewInformation', function(data){
+                if (data) {
+                    drugData = data.AllBrands;
+                    $('tbody.drug-list').html('');
+                    for(var i = 0; i < drugData.length; i++) {
+                        $('tbody.drug-list').append('<tr>');
+                        $('tbody.drug-list').append('<td><a href="'+drugData[i].ID+'">'+drugData[i].Name+'</a></td>');
+                        $('tbody.drug-list').append('<td>'+drugData[i].DosageForm+'</td>');
+                        $('tbody.drug-list').append('<td>'+drugData[i].StrengthName+'</td>');
+                        $('tbody.drug-list').append('<td>'+drugData[i].PackSize+'</td>');
+                        $('tbody.drug-list').append('<td>'+drugData[i].PriceInBDT+' Tk</td>');
+                        $('tbody.drug-list').append('</tr>');
+                    }
+                } else {
+                    $('tbody.drug-list').html('');
+                }
+            });
+        },
+        searchBrandInformation: function(Option) {
+            console.log('Method Name: drugObject.searchBrandInformation Param:  Value: '+Option);
+            var search_option = Option == undefined ? $('#searchDrugOption').val() : Option;
+            drugObject.searchOptionValue = encodeURIComponent(search_option);
+            if (search_option == '') return false;
+            search_option = $.trim(search_option);
+            var formURL = ""+drugObject.searchOptionType+'&Value='+drugObject.searchOptionValue+'&ProductType='+drugObject.productType;
+            switch (drugObject.searchOptionType) {
+                case 'brand':
+                    if (frontendCommonMethods.inArrayCaseInsensitive(search_option, drugObject.searchOptionForBrand) == -1) {
+                        $('.invalid-search-option-error').show();
+                        return false;
+                    }
+                    break;
+                case 'generic':
+                    if (frontendCommonMethods.inArrayCaseInsensitive(search_option, drugObject.searchOptionForGeneric) == -1) {
+                        $('.invalid-search-option-error').show();
+                        return false;
+                    }
+                    break;
+                case 'indication':
+                    if (frontendCommonMethods.inArrayCaseInsensitive(search_option, drugObject.searchOptionForIndication) == -1) {
+                        $('.invalid-search-option-error').show();
+                        return false;
+                    }
+                    break;
+                case 'manufacturer':
+                    if (frontendCommonMethods.inArrayCaseInsensitive(search_option, drugObject.searchOptionForManufacturer) == -1) {
+                        $('.invalid-search-option-error').show();
+                        return false;
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+            $('.invalid-search-option-error').hide();
+            window.location.replace(formURL);
+        },
+        getNewProducts: function(allProduct) {
+            console.log('Method Name: drugObject.getNewProducts Param: allProduct Value: '+[allProduct].toString());
+            var formURL = ""+allProduct;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getFeatureProducts', function(drugData){
+                $('div.new-products-ul ul').html('');
+                if(drugData) {
+                    var home_page_new_item_limit = 0;
+                    for (var i = 0; i < home_page_new_item_limit; i++) {
+                        if (i == drugData.length) break;
+                        if (i == 0) $('div.new-product-information').html('<h4>New Products</h4>');
+                        $('div.new-product-information').append('<a href="'+encodeURIComponent(drugData[i].Name)+'&ProductType='+drugObject.productType+'">'+drugData[i].Name+'</a>');
+                    }
+
+                    if (i > 0) {
+                        $('div.new-product-information').append('<a href="#">See More</a>');
+                    }
+                }
+            });
+        },
+        getNewPresentations: function(allPresentation) {
+            console.log('Method Name: drugObject.getNewPresentations Param: allPresentation Value: '+[allPresentation].toString());
+            var formURL = ""+allPresentation;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getNewPresentations', function(drugData){
+                // console.dir(drugData);
+                $('div.new-presentation-ul ul').html('');
+                if(drugData) {
+                    var home_page_new_item_limit = 0;
+                    for (var i = 0; i < home_page_new_item_limit; i++) {
+                        if (i == drugData.length) break;
+                        if (i == 0) $('div.new-presentation-information').html('<h4>New Presentations</h4>');
+                        $('div.new-presentation-information').append('<a href="'+encodeURIComponent(drugData[i].Name)+'&ProductType='+drugObject.productType+'">'+drugData[i].Name+'</a>');
+                    }
+
+                    if (i > 0) {
+                        $('div.new-presentation-information').append('<a href="">See More</a>');
+                    }
+                }
+            });
+        },
+        getNewBrands: function(allBrand) {
+            console.log('Method Name: drugObject.getNewBrands Param: allBrand Value: '+[allBrand].toString());
+            var formURL = ""+allBrand;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getNewBrands', function(drugData){
+                $('div.new-brand-ul ul').html('');
+                if(drugData) {
+                    var home_page_new_item_limit =0;
+                    for (var i = 0; i < home_page_new_item_limit; i++) {
+                        if (i == drugData.length) break;
+                        if (i == 0) $('div.new-brand-information').html('<h4>New Brands</h4>');
+                        $('div.new-brand-information').append('<a href="'+encodeURIComponent(drugData[i].Name)+'&ProductType='+drugObject.productType+'">'+drugData[i].Name+'</a>');
+                    }
+
+                    if (i > 0) {
+                        $('div.new-brand-information').append('<a href="">See More</a>');
+                    }
+                }
+            });
+        },
+        getHighlightedBrands: function() {
+            console.log('Method Name: drugObject.getHighlightedBrands Param:  Value: '+[].toString());
+            var formURL = "";
+            $('#highlighted-product').html('');
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getFeatureProducts', function(highlightedDrugData){
+                if (highlightedDrugData.length > 0) {
+                    var indication = '';
+                    for (var drug_index = 0; drug_index < highlightedDrugData.length; drug_index++) {
+                        var drugData = highlightedDrugData[drug_index];
+
+                        indication = drugData.Indication;
+                        indication = indication.length > 70 ? indication.substr(0, 67) + '...' : indication;
+                        $('#highlighted-product').append('<div><div class="star-product-img">' +
+                            '<img src="BrandImages/' + drugData.ImagePath + '" alt="">' +
+                            '</div>' +
+                            '<div class="star-product-info">' +
+                            '<div class="star"><i class="fas fa-star"></i></div>' +
+                            '<a href="' + drugData.ID + '" class="star-product-name">' + drugData.Name + '</a>' +
+                            '<p class="star-product-attributes">(' + drugData.StrengthName + ')</p>' +
+                            '<p class="star-product-description">' + indication + '</p>' +
+                            '</div></div>');
+                    }
+
+                    $('#highlighted-product').slick({
+                        slidesToScroll: 1,
+                        slidesToShow: 1,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        infinite: true,
+                        arrows: false,
+                        responsive: [
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                }
+                            }
+                        ]
+                    });
+                }
+            });
+        },
+        changeSearchOption: function(searchOption) {
+            console.log('Method Name: drugObject.changeSearchOption Param: searchOption  Value: '+[searchOption].toString());
+            $('ul.search-tabs li').removeClass('active');
+            drugObject.searchOptionType = searchOption;
+            var search_options = [];
+            switch (searchOption) {
+                case 'brand':
+                case 'brand_by_alphabetically':
+                    search_options = drugObject.searchOptionForBrand;
+                    $('ul.search-tabs li.brand').addClass('active');
+                    break;
+                case 'generic':
+                case 'generic_by_alphabetically':
+                    search_options = drugObject.searchOptionForGeneric;
+                    $('ul.search-tabs li.generic').addClass('active');
+                    break;
+                case 'indication':
+                    search_options = drugObject.searchOptionForIndication;
+                    $('ul.search-tabs li.indication').addClass('active');
+                    break;
+                case 'manufacturer':
+                    search_options = drugObject.searchOptionForManufacturer;
+                    $('ul.search-tabs li.manufacture').addClass('active');
+                    break;
+                default:
+                    break;
+            }
+
+			frontendCommonMethods.autocomplete(document.getElementById("searchDrugOption"), search_options);
+			frontendCommonMethods.autocomplete(document.getElementById("searchOptionInMobile"), search_options);
+        },
+        searchAlphabetically: function(value) {
+            if(drugObject.searchOptionType == 'manufacturer') {
+                drugObject.getManufacturerBrand('manufacturer', value);
+            } else {
+                var type = 'brand_by_alphabetically';
+                switch (drugObject.searchOptionType) {
+                    case 'brand':
+                        type = 'brand_by_alphabetically';
+                        break;
+                    case 'generic':
+                        type = 'generic_by_alphabetically';
+                        break;
+                    default:
+                        break;
+                }
+
+                window.location.replace(''+type+'&Value='+encodeURIComponent(value)+'&ProductType='+drugObject.productType);
+            }
+        },
+        getDrugList: function(getDrugList) {
+            
+            console.log('Method Name: drugObject.getDrugList Param: getDrugList Value: '+[getDrugList].toString());
+            var formURL = ""+'?PageNo='+pageNo+'&ProductType='+drugObject.productType;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getDrugList', function(drugData){
+                var drug_td_text = '';
+                for(var i = 0; i < drugData.length; i++) {
+                    drug_td_text = '<tr>' +
+                        '<td><a href="'+'?BrandID='+drugData[i].ID+'">'+drugData[i].Name+'</a></td>' +
+                        '<td>'+drugData[i].DosageForm+'</td>' +
+                        '<td>'+drugData[i].StrengthName+'</td>' +
+                        '<td>'+drugData[i].PackSize+'</td>' +
+                        '<td>'+drugData[i].PriceInBDT+' Tk</td>' +
+                        '</tr>';
+                    $('tbody.drug-list').append(drug_td_text);
+                }
+            });
+            drugObject.populatePagination(pageNo);
+        },
+        getAllDrugInfoForAutoComplete: function(searchOption) {
+            console.log('Method Name: drugObject.getAllDrugInfoForAutoComplete Param: option Value: ');
+			var formURL = ""+'?ProductType='+drugObject.productType;
+            mimsServerAPI.getServerData('GET', formURL, 'jsonp', 'drugObject.getAllDrugInfoForAutoComplete', function(drugData){
+                drugObject.searchOptionForBrand = drugData.Brand;
+                drugObject.searchOptionForGeneric = drugData.Generic;
+                drugObject.searchOptionForIndication = drugData.Indication;
+                drugObject.searchOptionForManufacturer = drugData.Manufacturer;
+
+                drugObject.changeSearchOption(searchOption);
+            });
+        },
+        populatePagination: function (objectID, pageNo, populateList, optionType, optionValue) {
+            console.log('Method Name: drugObject.populatePagination Param: objectID, pageNo, populateList, optionType, optionValue Value: '+[objectID, pageNo, populateList, optionType, optionValue].toString());
+			drugObject.searchObjectID = objectID === undefined ? drugObject.searchObjectID : objectID;
+			drugObject.searchOptionType = optionType === undefined ? drugObject.searchOptionType : optionType;
+			drugObject.searchOptionValue = optionValue === undefined ? drugObject.searchOptionValue : optionValue;
+            var per_page_information_number = drugObject.perPageInformationNumber;
+            var total_page = Math.ceil(drugObject.totalDrug / per_page_information_number);
+
+            if (populateList === true) drugObject.getSearchResult(pageNo, objectID, optionType, optionValue);
+            if (total_page > 1) {
+                $('ul#'+objectID).show();
+            } else {
+                $('ul#'+objectID).hide();
+            }
+
+            var total_pagination =0;
+            var start_page_no = pageNo - Math.floor(9 / 2) < 1 ? 1 : pageNo - Math.floor(9 / 2);
+            var page_counter = 0;
+            var pagination_li_text;
+            // console.log('per_page_information_number: '+per_page_information_number+' total_page: '+total_page+' total_pagination: '+total_pagination+' start_page_no: '+start_page_no);
+            $('ul#'+objectID).html('');
+            if (pageNo > 1) {
+                var previous_page_no = pageNo - 1;
+                $('ul#'+objectID).html('<li class="page-item">' +
+                    '                                    <a class="page-link" aria-label="Previous" onclick="drugObject.populatePagination(\''+drugObject.searchObjectID+'\','+ previous_page_no+', true, \''+drugObject.searchOptionType+'\',\''+drugObject.searchOptionValue+'\')">' +
+                    '                                        <span>&laquo;</span>' +
+                    '                                        <span class="sr-only">Previous</span>' +
+                    '                                    </a>' +
+                    '                                </li>' +
+                    '                                ');
+            }
+
+            for(var i = start_page_no; ; i++) {
+                if (page_counter == total_pagination - 1 || page_counter == total_page) {
+                    break;
+                }
+                pagination_li_text = '';
+                if (i == pageNo) {
+                    pagination_li_text = '<li class="page-item active"><a class="page-link" href="#">'+i+'</a></li>';
+                } else {
+                    pagination_li_text = '<li class="page-item"><a class="page-link" onclick="drugObject.populatePagination(\''+drugObject.searchObjectID+'\','+ i+', true, \''+drugObject.searchOptionType+'\',\''+drugObject.searchOptionValue+'\')">'+i+'</a></li>';
+                }
+                $('ul#'+objectID).append(pagination_li_text);
+                page_counter++;
+                console.log('page_counter: '+page_counter+' total_pagination: '+total_pagination+' total_page: '+total_page);
+            }
+
+            if (total_page > pageNo) {
+                var next_page_no = pageNo + 1;
+                $('ul#'+objectID).append('<li class="page-item">' +
+                    '                                    <a class="page-link" aria-label="Next" onclick="drugObject.populatePagination(\''+drugObject.searchObjectID+'\','+ next_page_no+', true, \''+drugObject.searchOptionType+'\',\''+drugObject.searchOptionValue+'\')">' +
+                    '                                        <span>&raquo;</span>' +
+                    '                                        <span class="sr-only">Next</span>' +
+                    '                                    </a>' +
+                    '                                </li>');
+            }
+        },
+        populatePaginationForNewInformation: function (pageNo, populateList) {
+            console.log('Method Name: drugObject.populatePaginationForNewInformation Param: pageNo, populateList Value: '+[pageNo, populateList].toString());
+            var per_page_information_number = drugObject.perPageInformationNumber;
+            var total_page = Math.ceil(drugObject.totalDrug / per_page_information_number);
+
+            if (populateList === true) drugObject.getNewInformation(pageNo);
+            if (total_page > 1) {
+                $('ul#search-brand-pagination').show();
+            } else {
+                $('ul#search-brand-pagination').hide();
+            }
+
+            var total_pagination = 0;
+            var start_page_no = pageNo - Math.floor(9 / 2) < 1 ? 1 : pageNo - Math.floor(9 / 2);
+            var page_counter = 0;
+            var pagination_li_text;
+            // console.log('per_page_information_number: '+per_page_information_number+' total_page: '+total_page+' total_pagination: '+total_pagination+' start_page_no: '+start_page_no);
+            $('ul#search-brand-pagination').html('');
+            if (pageNo > 1) {
+                var previous_page_no = pageNo - 1;
+                $('ul#search-brand-pagination').html('<li class="page-item">' +
+                    '                                    <a class="page-link" aria-label="Previous" onclick="drugObject.populatePaginationForNewInformation('+previous_page_no+', true)">' +
+                    '                                        <span>&laquo;</span>' +
+                    '                                        <span class="sr-only">Previous</span>' +
+                    '                                    </a>' +
+                    '                                </li>' +
+                    '                                ');
+            }
+
+            for(var i = start_page_no; ; i++) {
+                if (page_counter == total_pagination - 1 || page_counter == total_page) {
+                    break;
+                }
+                pagination_li_text = '';
+                if (i == pageNo) {
+                    pagination_li_text = '<li class="page-item active"><a class="page-link" href="#">'+i+'</a></li>';
+                } else {
+                    pagination_li_text = '<li class="page-item"><a class="page-link" onclick="drugObject.populatePaginationForNewInformation('+i+', true)">'+i+'</a></li>';
+                }
+                $('ul#search-brand-pagination').append(pagination_li_text);
+                page_counter++;
+                console.log('page_counter: '+page_counter+' total_pagination: '+total_pagination+' total_page: '+total_page);
+            }
+
+            if (total_page > pageNo) {
+                var next_page_no = pageNo + 1;
+                $('ul#search-brand-pagination').append('<li class="page-item">' +
+                    '                                    <a class="page-link" aria-label="Next" onclick="drugObject.populatePaginationForNewInformation('+next_page_no+', true)">' +
+                    '                                        <span>&raquo;</span>' +
+                    '                                        <span class="sr-only">Next</span>' +
+                    '                                    </a>' +
+                    '                                </li>');
+            }
+        }
+    }
+
+    $(document).bind('keydown', function(e){
+        if (e.which == 13){
+            $('#searchInformation').trigger('click');
+        }
+    });
+</script>
+
+
+
+<!-- banner -->
+<style>
+    span.bahuthard {
+      /* position: absolute; */
+      background: red;
+      border: none;
+      color: white;
+      left: 25px;
+      top: 5px;
+      font-size: 15px;
+      padding: 0px 10px;
+      font-weight: 900;
+      border-radius: 3px;
+      border: none !important;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      width: 50px;
+      justify-content: center;
+      margin-left: auto;
+      margin-bottom: 5px;
+    }
+  
+    .content-section .row .col-md-4 {
+      margin-bottom: 40px;
+    }
+  
+    .content-section .row .col-md-4 .single-person {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  
+    a.okta {
+      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+      padding: 30px 10px;
+      width: 100%;
+      display: block;
+      font-size: 19px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #212536;
+      background-size: cover;
+      text-decoration: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    div#jclin {
+      margin-top: 30px;
+    }
+  
+    .important-information-col {
+      height: 200px;
+    }
+  
+    .important-information-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .uk_tabs li.nav-item {
+      border: none;
+    }
+  
+    .uk_tabs ul#myTab li.nav-item a {
+      color: #019A3D;
+      font-weight: 900;
+    }
+  
+    .uk_tabs ul#myTab li.nav-item .active {
+      color: #495057 !important;
+      background-color: #fff;
+      border-color: #dee2e6 #dee2e6 #fff;
+    }
+  
+    a.okta img {
+      margin-right: 10px !important;
+    }
+  
+    a.okta img {
+      margin-right: 10px;
+    }
+  
+  
+    div#jhaiyam_more {
+      height: 556px;
+      margin-bottom: 40px;
+    }
+  
+    div#jhaiyam_more .col-md-4.col-12 {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+  
+    div#jhaiyam_more .col-md-8.col-12 {
+      padding-right: 0;
+    }
+  
+    div#jhaiyam_more .col-md-8.col-12 div#highlighted-product {
+      border-radius: 0px !important;
+      height: 100%;
+    }
+  
+    .star-product {
+      background-color: var(--section-bg);
+      margin-top: 30px;
+      height: 100% !important;
+      max-height: unset !important;
+      border-radius: 0px !important;
+      overflow: hidden;
+      box-shadow: none !important;
+    }
+  
+    .un-mesh_icon {
+      color: #009B3E;
+      font-size: 30px;
+      margin-right: 10px;
+    }
+  
+  
+  
+  
+    @media only screen and (max-width: 600px) {
+      div#jhaiyam_more {
+        height: auto !important;
+        margin-bottom: 40px;
+      }
+  
+  
+  
+      .slick-prev.slick-arrow:before,
+      .slick-next.slick-arrow:before {
+        content: " ";
+        display: inline-block;
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        opacity: 1;
+        background-size: contain;
+        background-position: top center;
+        display: none !important;
+      }
+  
+      div#bihari {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+  
+      }
+  
+      div#bihari a {
+        font-size: 12px;
+        text-align: center;
+      }
+  
+  
+      .section-col {
+        border-bottom: none !important;
+  
+        padding-top: 0px !important;
+      }
+  
+      .section-col h4::after {
+        content: "";
+        background: #33495E;
+        width: 40%;
+        height: 4px;
+        position: absolute;
+        left: 16%;
+        top: -3px;
+        text-align: center;
+      }
+  
+      .section-col h4 {
+        font-size: var(--font-size-regular);
+        color: var(--title-color);
+        font-family: var(--font-bold);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        position: relative !important;
+        font-size: 12px;
+        text-align: center;
+  
+      }
+  
+    }
+  
+    a#okta6 {
+      background: linear-gradient(to right, #009b3e, #15ed6c);
+      color: white;
+    }
+  
+  
+    div#bismilaalla {
+      position: relative;
+    }
+  
+    div#bismilaalla span {
+      position: absolute;
+      background: red;
+      border: none;
+      color: white;
+      left: 25px;
+      top: 5px;
+      font-size: 15px;
+      padding: 0px 10px;
+      font-weight: 900;
+      border-radius: 3px;
+      border: none !important;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    @media only screen and (max-width: 992px) {
+      div#uhjl {
+        height: auto !important;
+        display: block !important;
+      }
+  
+  
+      .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20px !important;
+        /* width: 800px; */
+        width: 90%;
+        margin-top: 19px !important;
+        margin: auto !important;
+      }
+  
+  
+      .lockal {
+        font-family: 'Bahnschrift Regular', sans-serif;
+        height: 100px;
+        position: relative;
+  
+        border: 1px solid #e4e4e4;
+        padding: 15px 0;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        display: flex;
+        width: 180px;
+        margin: 20px 10px;
+        /* padding: 30px 0px !important; */
+        padding: 10px;
+        height: 120px;
+        border-radius: 20px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 60px;
+      }
+  
+  
+      .search-tabs a {
+        float: left;
+        padding: 6px 8px;
+        text-decoration: none;
+        color: var(--section-bg) !important;
+        font-size: var(--font-size-medium);
+        font-family: var(--font-regular);
+        -webkit-border-top-left-radius: 7px;
+        -webkit-border-top-right-radius: 7px;
+        -moz-border-radius-topleft: 7px;
+        -moz-border-radius-topright: 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 14px;
+      }
+  
+  
+  
+    }
+  
+  
+  
+  
+    .lockal p {
+      text-transform: capitalize !important;
+  }
+  
+    @media only screen and (max-width: 500px) {
+  
+  
+      section.anitext {
+     
+      padding-bottom: 50px;
+  }
+  
+      .waviy {
+        position: relative;
+        padding-bottom: 50px;
+      }
+  
+  
+      .lockal {
+        font-family: 'Bahnschrift Regular', sans-serif;
+        height: 100px;
+        position: relative;
+  
+        border: 1px solid #e4e4e4;
+        padding: 15px 0;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        display: flex;
+        width: 100%;
+        margin: 20px 10px;
+        /* padding: 30px 0px !important; */
+        padding: 10px;
+        height: 120px;
+        border-radius: 20px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 0px;
+      }
+  
+  
+      .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20px !important;
+        /* width: 800px; */
+        width: 90%;
+        margin-top: 19px !important;
+        margin: auto !important;
+        margin-bottom: 35px !important;
+      }
+  
+      ul.search-tabs.group li a {
+        font-size: 10px;
+      }
+  
+      section.anitext {
+        text-align: center;
+        width: 90% !important;
+        margin: auto;
+      }
+  
+      img.logo.d-lg-none {
+        width: 199px !important;
+      }
+  
+      .marquee-sibling {
+        font-size: 12px !important;
+      }
+  
+      .waviy {
+        margin: auto;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+  
+      .waviy span {
+        font-size: 12px !important;
+        font-weight:600 !important ;
+      }
+  
+  
+    }
+  
+    section#contur {
+      background: #FFFFFF;
+  
+    }
+  
+    img.mratime {
+      width: 50px;
+    }
+  
+  
+    .type-wrap {
+      font-size: 50px;
+      padding: 20px;
+    }
+  
+    /* the above is for styling puposes only */
+  
+  
+    #table {
+      display: table;
+      width: 100%;
+      height: 100%;
+      background-color: #e5e5e5;
+    }
+  
+    #centeralign {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
+  <!-- Study Club -->
+  <!-- Brand Detail -->
+  <!-- Search click event -->
+  <div class=" text-scroller">
+    <div class="simple-marquee-container">
+      <div class="marquee-sibling">
+       Title of Scroll
+      </div>
+      <marquee width="100%" direction="left" height="100%" style="color: #ffffff; padding-top: 10px;">
+        Scroll Test here
+      </marquee>
+    </div>
+  </div>
+  <div class="banner d-md-flex d-none" id="uhjl">
+    <div class="search-wrapper">
+      <ul class="search-tabs group">
+        <li class="brand active"><a onclick="drugObject.changeSearchOption('brand')" class="search_option_type search_by_brand">Brand</a></li>
+        <li class="generic"><a onclick="drugObject.changeSearchOption('generic')" class="search_option_type search_by_generic">Generic</a></li>
+        <li class="indication"><a onclick="drugObject.changeSearchOption('indication')" class="search_option_type search_by_indication">Indication</a></li>
+        <li class="manufacture"><a onclick="drugObject.changeSearchOption('manufacturer')" class="search_option_type search_by_manufacturer">Manufacturer</a></li>
+      </ul>
+      <div class="search">
+        <input class="search-bar no-outline" type="text" id="searchDrugOption">
+        <button class="search-btn no-outline" onclick="drugObject.searchBrandInformation()" id="searchInformation"><img src="../frontend/images/icons/magnifying-glass.svg" class="search-icon" alt=""></button>
+      </div>
+      <div class="alphabets">
+        <a onclick="drugObject.searchAlphabetically('a')" class="alphabet-link">A</a>
+        <a onclick="drugObject.searchAlphabetically('b')" class="alphabet-link">B</a>
+        <a onclick="drugObject.searchAlphabetically('c')" class="alphabet-link">C</a>
+        <a onclick="drugObject.searchAlphabetically('d')" class="alphabet-link">D</a>
+        <a onclick="drugObject.searchAlphabetically('e')" class="alphabet-link">E</a>
+        <a onclick="drugObject.searchAlphabetically('f')" class="alphabet-link">F</a>
+        <a onclick="drugObject.searchAlphabetically('g')" class="alphabet-link">G</a>
+        <a onclick="drugObject.searchAlphabetically('h')" class="alphabet-link">H</a>
+        <a onclick="drugObject.searchAlphabetically('i')" class="alphabet-link">I</a>
+        <a onclick="drugObject.searchAlphabetically('j')" class="alphabet-link">J</a>
+        <a onclick="drugObject.searchAlphabetically('k')" class="alphabet-link">K</a>
+        <a onclick="drugObject.searchAlphabetically('l')" class="alphabet-link">L</a>
+        <a onclick="drugObject.searchAlphabetically('m')" class="alphabet-link">M</a>
+        <a onclick="drugObject.searchAlphabetically('n')" class="alphabet-link">N</a>
+        <a onclick="drugObject.searchAlphabetically('o')" class="alphabet-link">O</a>
+        <a onclick="drugObject.searchAlphabetically('p')" class="alphabet-link">P</a>
+        <a onclick="drugObject.searchAlphabetically('q')" class="alphabet-link">Q</a>
+        <a onclick="drugObject.searchAlphabetically('r')" class="alphabet-link">R</a>
+        <a onclick="drugObject.searchAlphabetically('s')" class="alphabet-link">S</a>
+        <a onclick="drugObject.searchAlphabetically('t')" class="alphabet-link">T</a>
+        <a onclick="drugObject.searchAlphabetically('u')" class="alphabet-link">U</a>
+        <a onclick="drugObject.searchAlphabetically('v')" class="alphabet-link">V</a>
+        <a onclick="drugObject.searchAlphabetically('w')" class="alphabet-link">W</a>
+        <a onclick="drugObject.searchAlphabetically('x')" class="alphabet-link">X</a>
+        <a onclick="drugObject.searchAlphabetically('y')" class="alphabet-link">Y</a>
+        <a onclick="drugObject.searchAlphabetically('z')" class="alphabet-link">Z</a>
+      </div>
+    </div>
+    <style>
+      section.anitext {
+        text-align: center;
+        width: 70%;
+      }
+  
+      .waviy {
+        position: relative;
+      }
+  
+      .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        font-weight:800;
+        color: #fff;
+        text-transform: uppercase;
+        animation: flip 5s infinite;
+        animation-delay: calc(.5s * var(--i))
+      }
+      span.newclss {
+      font-size: 25px;
+      font-weight:900;
+  }
+  
+      /* @keyframes flip {
+  
+        0%,
+        80% {
+          transform: rotateY(360deg)
+        }
+       
+      } */
+    </style>
+  
+    <section class="anitext">
+      <div class="waviy">
+      </div>
+    </section>
+  
+  </div>
+  
+  
+  
+  <!-- home product slider -->
+  <div class="home-product-slider-container container">
+    <div class="home-product-slider-wrapper">
+      <div id="home-product-slider"></div>
+    </div>
+  </div>
+  <!-- home advert -->
+  <div class="container advert-container home-advert-container1 home-advert-container-top"></div>
+  <!-- content -->
+  <div class="container">
+    <div class="row" id="jhaiyam_more">
+      <!-- drug update -->
+      <div class="col-md-8 col-12">
+        <div class="content-section">
+          <div class="section-header drug-update-header">
+            <span><img src="../frontend/images/icons/medicine.svg" alt="*"></span>Drug
+            Update
+          </div>
+          <div class="container">
+            <div class="row" id="bihari">
+              <div class="col-4 col-md-4 section-col new-product-information" style="padding-left: 5px; padding-right: 5px">
+              </div>
+              <div class="col-4 col-md-4  section-col new-brand-information" style="padding-left: 5px; padding-right: 5px">
+              </div>
+              <div class="col-4 col-md-4 section-col new-presentation-information" style="padding-left: 5px; padding-right: 5px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- star product -->
+      <div class="col-md-4 col-12">
+        <div class="star-product" id="highlighted-product">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team Section -->
+  <section class="section-team" id='OurDoctors'>
+  <div class="container">
+      <div class="row">
+          <!-- drug update -->
+          <div class="col-md-12 col-12">
+              <div class="content-section">
+                  <div class="section-header drug-update-header">
+                      <span><i class="fa fa-user-md un-mesh_icon" aria-hidden="true"></i></span> Our Doctors
+                  </div>
+                  <div class="row">
+                      <!-- Start Single Person -->
+                      <div class="col-md-4">
+                          <div class="single-person">
+                              <div class="person-image">
+                                  <!-- <a href="#">
+                      <img src="https://i.ibb.co/G2CBWvb/person1.jpg" alt="">
+                    </a> -->
+                                  <span class="icon">
+                                      <i class="fa-solid fa-user-doctor"></i>
+                                  </span>
+                              </div>
+                              <div class="person-info">
+                                  <h3 class="full-name"> <a href="index.php/Doctor/getAllDoctorInformation"> Dr. M.
+                                          Khalequjaman </a>
+                                  </h3>
+                                  <span class="speciality"> ORTHOPEDICS </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="single-person">
+                              <div class="person-image">
+                                  <!-- <a href="#">
+                      <img src="https://i.ibb.co/nbpNr4r/person2.jpg" alt="">
+                    </a> -->
+                                  <span class="icon">
+                                      <i class="fa-solid fa-user-doctor"></i>
+                                  </span>
+                              </div>
+                              <div class="person-info">
+                                  <h3 class="full-name"> <a href="index.php/Doctor/getAllDoctorInformation"> Dr. G. M.
+                                          Ruhul Kuddus </a>
+                                  </h3>
+                                  <span class="speciality"> ORTHOPEDICS </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="single-person">
+                              <div class="person-image">
+                                  <!-- <a href="#">
+                      <img src="https://i.ibb.co/25zdRMr/person3.jpg" alt="">
+                    </a> -->
+                                  <span class="icon">
+                                      <i class="fa-solid fa-user-doctor"></i>
+                                  </span>
+                              </div>
+                              <div class="person-info">
+                                  <h3 class="full-name"><a href="index.php/Doctor/getAllDoctorInformation"> Dr. Md. Nazmul
+                                          Huda </a>
+                                  </h3>
+                                  <span class="speciality"> ORTHOPEDICS </span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- / End Single Person -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+   
+  </section>
+  <div class="container" id='ImportantInformation'>
+  <div class="row">
+    <div class="col-md-12 col-12">
+        <div class="content-section">
+          <div class="section-header drug-update-header section-header-bottom">
+            <span><i class="fa fa-info-circle un-mesh_icon" aria-hidden="true"></i></span>Important Information<a class="section-header-view-all-btn no-outline" href="#">See All Address</a>
+            <div class="row" id="jclin">
+              <div class="col-md-4">
+                <a href="#" class="okta" id="okta1"> <img src="https://cdn-icons-png.flaticon.com/512/4625/4625809.png" alt="" width="65px" height="65px"> 24 hours Pharmacy</a>
+              </div>
+              <div class="col-md-4">
+                <a href="#" class="okta" id="okta2"> <img src="https://cdn-icons-png.flaticon.com/512/6010/6010253.png" alt="" width="65px" height="65px">Ambulance Service</a>
+              </div>
+              <div class="col-md-4">
+                <a href="#" class="okta" id="okta3"> <img src="https://cdn-icons-png.flaticon.com/512/7251/7251772.png" alt="" width="65px" height="65px">Blood Bank</a>
+              </div>
+              <div class="col-md-4">
+                <a href="#" class="okta" id="okta4"> <img src="https://cdn-icons-png.flaticon.com/512/1856/1856063.png" alt="" width="65px" height="65px">Cancer Hospital</a>
+              </div>
+              <div class="col-md-4">    
+                <a href="#" class="okta" id="okta5"><img src="https://cdn-icons-png.flaticon.com/512/1589/1589705.png" alt="" width="65px" height="65px">Cardiac Hospitals</a>
+              </div>
+  
+  
+              <div class="col-md-4" id="bismilaalla">
+                <span>new</span>
+                <a href="#" class="okta" id="okta6"><img src="https://cdn-icons-png.flaticon.com/512/2818/2818318.png" alt="" width="65px" height="65px">Journal Dental</a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <!-- drug update -->
+    <div class="row">
+     
+        <div class="col-md-4 col-12">
+          <div class="content-section">
+            <div class="important-information-col">
+              <img src="#" alt="">
+            </div>
+          </div>
+        </div>
+    
+  
+  
+    </div>
+   
+  </div>
+  </div>
+  </div>
+  
+  <!-- special reports slider -->
+  <div class="home-special-report-slider-container container">
+    <div class="home-special-report-slider-wrapper content-section">
+      <div class="section-header" style="margin-bottom: 24px;">
+        <span><i class="fa fa-bug un-mesh_icon" aria-hidden="true"></i></span>Special Reports
+        <a class="section-header-view-all-btn no-outline" href="#">See All Special Reports</a>
+      </div>
+      <div id="home-special-report-slider" class="home-special-report-list"></div>
+    </div>
+  </div>
+ 
+  <!-- home advert -->
+  <div class="container advert-container home-advert-container2 home-advert-container-mid" style="padding-top: 30px;">
+  </div>
+  <!-- MiMS Learning slider -->
+  <!-- content -->
+  <div class="container">
+    <div class="row">
+      <!-- job circular -->
+      <div class="col-md-6 col-12">
+        <div class="content-section" style="padding: 0; max-height: none;">
+          <div class="section-header own-pad" style="margin-bottom: 16px;">
+            <span><img src="../frontend/images/icons/briefcase.svg" alt="*"></span>Job
+            Circular
+            <a class="section-header-view-all-btn no-outline" href="#">See All jobs</a>
+          </div>
+          <div class="uk_tabs">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">medical</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">pharma</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            
+                <a href="index.php/Job/showJobDetail?JobID=">
+                  <div class="media-list-left-image">
+                  <div class="media">
+                    <div class="media-left">
+            
+                      <img src="#" class="media-object">
+                    
+                    </div>
+                    <div class="media-body">
+                    <span class="bahuthard">New</span>
+                    <h4 class="media-heading">
+                     
+                    </h4>
+                    <p>
+                   
+                    </p>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+             
+  
+                
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          
+                  <a href="index.php/Job/showJobDetail?JobID=">
+                    <div class="media-list-left-image">
+                      <div class="media">
+                        <div class="media-left">
+                         
+                            <img src="#" class="media-object">
+                         
+                        </div>
+                        <div class="media-body">
+                          <span class="bahuthard">New</span>
+                          <h4 class="media-heading">
+                           
+                          </h4>
+                          <p>
+                         
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+ 
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- local news -->
+      <div class="col-md-6 col-12">
+        <div class="content-section" style="padding: 0px; max-height: none;">
+          <div class="section-header own-pad" style="margin-bottom: 16px;">
+            <span><img src="../frontend/images/icons/newspaper.svg" alt="*"></span>Pharma News
+            <a class="section-header-view-all-btn no-outline" href="#">See
+              All News</a>
+          </div>
+          <div class="container ">
+           
+              <a href="index.php/News/showIndividualNewsDetail?NewsID=">
+                <div class="media-list-left-image">
+                  <div class="media">
+                    <div class="media-left">
+                      
+                        <img src="#" class="media-object">
+                    
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                     
+                      </h4>
+                      <p>
+                      
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <!-- special reports slider -->
+  
+  
+  
+    <div class="home-special-report-slider-container container" id="durandar">
+  
+  
+  
+      <div class="home-special-report-slider-wrapper content-section">
+        <img src="https://img.icons8.com/color/512/last-12-hours.png" class="mratime" alt="">
+  
+  
+        <section id="contur">
+          <div class="mt_counter">
+            <div class="new_cunter">
+              <div class="lockal">
+                <div>
+                  <h2 class="count">
+                    <div class="counting" data-count="0">0</div>
+                  </h2>
+  
+                  <p>Brand</p>
+                </div>
+                <div>
+                  <i class="fa fa-registered" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="lockal">
+                <div>
+  
+  
+                  <h2 class="count">
+                    <div class="counting" data-count="">0</div>
+                  </h2>
+                  <p>Generic</p>
+                </div>
+                <div>
+                  <i class="fa fa-flask" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="lockal">
+                <div>
+                  <h2 class="count">
+                    <div class="counting" data-count="">0</div>
+                  </h2>
+  
+                  <p>Herbal</p>
+                </div>
+                <div>
+                  <img src="https://medex.com.bd/img/dosage-forms/herbal-meds-2.png" alt="" width="33px">
+                </div>
+              </div>
+              <div class="lockal">
+                <div>
+                  <h2 class="count">
+                    <div class="counting" data-count="">0</div>
+                  </h2>
+  
+                  <p>Pharma</p>
+                </div>
+                <div>
+                  <i class="fa fa-industry" aria-hidden="true"></i>
+                </div>
+              </div>
+  
+              <div class="lockal">
+                <div>
+                  <h2 class="count">
+                    <div class="counting" data-count="0">0</div>
+                  </h2>
+  
+                  <p>doctor</p>
+                </div>
+                <div>
+                  <i class="fa fa-user-md" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  
+    <div class=" home-special-report-slider-container container" id="my_tub">
+  
+  
+  
+      <div class="home-special-report-slider-wrapper content-section">
+  
+  
+  
+  
+  
+  
+        <div class="section-header" style="margin-bottom: 24px;">
+          <span><img src="../frontend/images/icons/videoclip.svg" alt="*"></span>Video
+          Gallery
+          <a class="section-header-view-all-btn no-outline" href="#">See All
+            Videos</a>
+        </div>
+        <!--<div id="home-youtube-slider" class="home-youtube-list"></div>-->
+        <div class="slider">
+      
+  
+            <div class="youtube-video">
+              <a href="#" onclick="frontendCommonMethods.youtubeFullScreen()"> <img src="#">
+              </a>
+              <h4> <a href="#" onclick="frontendCommonMethods.youtubeFullScreen()">
+                
+                </a> </h4>
+            </div>
+         
+      
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- international health -->
+     
+      <!-- important addresses -->
+    </div>
+  </div>
+  <!-- dev@ -->
+  <!-- bottom quote section -->
+ 
+  <div style="display: none" id="youtubeFullScreenModal" class="fullScreenImage">
+    <div style="height: 60px">
+      <!--		<div class="fb-share-button" data-href="http://localhost/mims/Video/getAllVideo?id=q-1TAxlkOvg" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%2Fmims%2FVideo%2FgetAllVideo%3Fid%3Dq-1TAxlkOvg&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>-->
+      <a style="float: right; padding: 10px" class="btn-closeView" onclick="frontendCommonMethods.closeYoutubeScreen()" title="Close"><img width="40px" height="40px" src="#"></a>
+      <!--		<a style="float: right; padding: 10px" class="btn-closeView" onclick="frontendCommonMethods.facebookShare()" title="Facebook Share"><img width="40px" height="40px" src="-->
+      
+      <!--application/views/images/icons/facebook-share.png"></a>-->
+    </div>
+    <div id="youtube-fullScreen" style="display: none; padding: 0px 50px 50px 50px; height: 100%" class="full-screen-photo-holder"></div>
+  </div>
+  
+  <script>
+    $('.banner').css('background-image', '../frontend/images/banner-bg.jpg');
+    $('.slick-prev.slick-arrow:before').css('background-image', '../frontend/images/icons/left-arrow-white.png');
+    $('.slick-next.slick-arrow:before').css('background-image', '../frontend/images/icons/right-arrow-white.png');
+    $('.slick-prev.slick-arrow.slick-disabled:before').css('background-image', '../frontend/images/icons/left-arrow-white.png');
+    $('.slick-next.slick-arrow.slick-dbefore').css('background-image', '../frontend/images/icons/right-arrow-white.png');
+    frontendCommonMethods.getAdvertisement(['home-product-slider'], 3);
+    frontendCommonMethods.getCommonAdvertisement(['home-advert-container-top', 'home-advert-container-mid']);
+    drugObject.productType = "REGULAR_PRODUCT";
+    drugObject.getSpecialReports();
+    // drugObject.getMimsLearning();
+    drugObject.getJobCirculars();
+    drugObject.getLocalNews();
+    drugObject.getInternationalHealth();
+    drugObject.getImportantAddress();
+    drugObject.getNewBrands(0);
+    drugObject.getNewPresentations(0);
+    drugObject.getNewProducts(0);
+    drugObject.getHighlightedBrands();
+    frontendCommonMethods.getNumberOfVisitor();
+    drugObject.getAllDrugInfoForAutoComplete('brand');
+    frontendCommonMethods.mainMenuActivation('home');
+    $(document).ready(function() {
+      // $.getScript("http://connect.facebook.net/en_US/all.js# xfbml=1", function () {
+      // 	FB.init({ appId: 'xxxxxxxx', status: true, cookie: true, xfbml: true });
+      // });
+    });
+    youTubeVideos = "";
+    var individual_youtube = '';
+    var youtube_title = '';
+    for (var youtube_no = 0; youtube_no < 4; youtube_no++) {
+      youtube_title = youTubeVideos[youtube_no].Title;
+      youtube_title = youtube_title.length > 65 ? youtube_title.substr(0, 60) + ' ...' : youtube_title;
+      individual_youtube = '<div class="home-special-report-slide">' +
+        '<a onclick="frontendCo mmonMethods.youtubeFullScreen(' + youtube_no + ')"><img src="' + youTubeVideos[youtube_no].thumbnail + '"  alt="">' +
+        '<p class="home-special-report-slide-title">' + youtube_title + '</p>' +
+        '</di v>';
+      $('.home-youtube-list').append(individual_youtube);
+    }
+    $('#home-youtube-slider').slick({
+      slidesToScroll: 1,
+      slidesToShow: 4,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      infinite: false,
+      arrows: true,
+      responsive: [{
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      }]
+    });
+  </script>
+  <script>
+    //     jQuery(document).ready(function($) {
+    //       $('#team-slider').slick({
+    //         dots: false,
+    //         infinite: true,
+    //         speed: 500,
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1,
+    //         autoplay: true,
+    //         autoplaySpeed: 2000,
+    //         arrows: true,
+    //         responsive: [{
+    //           breakpoint: 600,
+    //           settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 1
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 400,
+    //           settings: {
+    //               arrows: fa/               slidesToShow: 1,
+    //               slidesToScroll: 1
+    //           }
+    //         }]
+    //     });
+    // });
+  </script>
+  <script>
+    jQuery(document).ready(function($) {
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+    // number count for stats, using jQuery animate
+  
+    $('.counting').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+  
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+  
+        {
+  
+          duration: 3000,
+          easing: 'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+  
+        });
+  
+  
+    });
+  </script>
+ 
+
+
+
+
+  <!-- Footer Start -->
+
+<style>
+span.visitor-count {
+    background: #009B3E;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    /* font-size: 14px; */
+    font-size: 16px;
+    width: 130px !important;
+    text-align: left !important;
+}
+
+
+
+    .footer-hotline {
+        text-align: left;
+    }
+
+
+
+    .footer-hotline a {
+        display: block;
+        margin: 5px 0px;
+    }
+
+    .footer-logo.logo-middle.quote .socail-links {
+        margin-top: 10px;
+    }
+</style>
+<!-- footer -->
+<footer>
+    <div class="container d-flex justify-content-between footer-wrapper">
+        <div class="footer-logo logo-middle">
+            <a href="#">
+               
+                <img id="footerLogo" style="width:200px;" class="logo d-none d-lg-block" src="../frontend/images/logo/Gv2.png" alt="Rx MiMS Bangladesh">
+            </a>
+        </div>
+
+        <div class="footer-links">
+            <h4> Quick links </h4>
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#"> About Us </a> </li>
+                <li> <a href="#">Privacy Policy </a> </li>
+
+                <!-- <li> <a href="#"> Ebook </a> </li> -->
+            </ul>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <ul>
+
+                <li> <a href="#"> Doctor </a> </li>
+                <li> <a href="#"> Herbal </a> </li>
+                <li> <a href="#"> Journal </a> </li>
+                <li> <a href="#"> Disclaimer </a> </li>
+                <!-- <li> <a href="#"> Ebook </a> </li> -->
+            </ul>
+
+        </div>
+
+
+        <div class="footer-hotline">
+            <h4> Contact Us </h4>
+            <a class="hotline-number" href="tel:+880-1617776467"><i class="ico-phone"></i>+880-161777(MIMS)6467</a>
+            <a class="hotline-number" href="tel:+880-1309990637"><i class="ico-phone"></i>+880-1309990637</a>
+            <a class="hotline-email" href="mailto:rxmimsbd@gmail.com"><i class="icon-email"></i>info@mimsbangladesh.com</a>
+
+
+            <!--<div class="left-links">-->
+            <!--    <a href="https://www.facebook.com/rxmimsbd" class="side-link" target="_blank"><i class="fab fa-facebook-square"></i></a>-->
+            <!--    <a href="https://twitter.com/rxmims" class="side-link" target="_blank"><i class="fab fa-twitter-square"></i></a>-->
+            <!--</div>-->
+        </div>
+        <style>
+            .visitor1 {
+                /* display: flex;
+    justify-content: space-between;
+    width: 200px; */
+            }
+        </style>
+        <div class="footer-logo logo-middle quote">
+            <div class="visitor1">
+                <span>Visitors -</span><span style="color: #fff;" class="visitor-count"></span>
+            </div>
+            <div class="socail-links">
+                <ul>
+                    <li> <a href="https://www.facebook.com/rxmimsbd" class="side-link" target="_blank"><i class="fa-brands fa-facebook-f"></i> </a> </li>
+                    <li> <a href="https://twitter.com/rxmims" class="side-link" target="_blank"><i class="fab fa-twitter"></i></a> </li>
+                    <li> <a href="#" target="_blank"> <i class="fa-brands fa-youtube"></i> </a> </li>
+                    <li> <a href="#" target="_blank"> <i class="fa-brands fa-instagram"></i> </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="copy-right-bottom">
+        <div class="container justify-content-between align-items-center">
+            <p>ISSN: 2707-109X ©# - Pharmamedica</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="#"></script>
+
+<script>
+    frontendCommonMethods.incrementVisitorCount();
+    frontendCommonMethods.getNumberOfVisitor();
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        frontendCommonMethods.changeForMobileUI();
+    } else {
+        frontendCommonMethods.changeForDesktopUI();
+    }
+</script>
+</body>
+
+</html>

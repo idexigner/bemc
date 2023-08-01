@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1200px) {
+    .res-t {
+        top: 2.5% !important;
+    }
+    .brand .res-t {
+        top: 1.6% !important;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+
+    a.search-btn {
+        right: 12%;
+        top: 70%;
+    }
+    .res-t {
+        top: 1.8% !important;
+    }
+    .brand .a-pag .page-link {
+        padding: 3px 3px;
+        font-size: 14px;
+    }
+    span.separator-2 {
+        display: none;
+    }
+    .doctor-address .icon,
+    .doctor-phone .icon {
+
+        margin-bottom: 10px;
+    }
+    .doctor-list {
+
+        padding: 40px 10px;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product-add-5 {
+        margin-bottom: 15px;
+    }
+    .product-add-5 {
+        position: relative;
+    }
+    .res-t {
+        top: 3.4% !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {
+    a.search-btn {
+        top: 76%;
+    }
+    .res-t {
+        top: 5% !important;
+    }
+    .brand .res-t {
+        top: 2.3% !important;
+    }
+}

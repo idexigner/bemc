@@ -1,0 +1,1054 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*css helper classes*/
+.hide {
+    display: none !important;
+}
+.no-padding {
+    padding: 0;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.job-circular .container {
+    max-width: 1300px;
+}
+
+/*bootstrap nav style override*/
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+a{
+    cursor: pointer;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.logo {
+    padding-top: 30px;
+
+}
+
+.sign-in {
+    padding-top: 44px;
+
+}
+
+.sign-in i {
+    font-size: 26px;
+    color: #EC1C24;
+    margin-right: 5px;
+}
+
+.sign-in a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #929497;
+}
+.sign-in ul li{
+    margin-left: 30px;
+}
+
+.menu {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.menu .bg-light {
+    background-color: #ec1c24!important;
+}
+
+.menu .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+
+.menu .nav-item.active {
+    border-bottom: 5px solid #fff;
+}
+
+.menu .navbar-light .navbar-nav .active > .nav-link {
+    color: #fff;
+}
+
+.menu .navbar {
+
+    padding: .5rem 1rem 0;
+}
+
+.menu .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.search-bar {
+    border: 1px solid #BBBDBF;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+.search-bar-inner{
+    border: 1px solid #BBBDBF;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+
+.search-bar-inner a.search-btn{
+    top: 45px;
+}
+
+.search-bar-inner ul {
+    margin: 0px 0px 15px 0 !important;
+}
+.search-bar a:hover {
+    color: #EC1C24;
+}
+
+span.separator {
+    border-right: 2px solid #A6A8AB;
+
+}
+
+.search-bar a {
+    color: #1996C0;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.search-bar ul {
+    margin: 25px 0 15px 0;
+}
+
+.search-bar .form-control {
+    width: 95%;
+    border-radius: 0;
+
+}
+
+a.search-btn {
+    position: absolute;
+    right: 10%;
+    top: 55%;
+    color: #EC1C24;
+}
+
+.drug-update .title,
+.product-highlights h3.title {
+    background: #DBDCDD;
+    color: #000;
+    padding: 16px 25px 16px;
+    font-size: 20px;
+}
+
+.drug-update,
+.product-highlights {
+    border: 1px solid #BBBDBF;
+}
+
+.drug-update a:hover {
+    color: #EC1C24;
+}
+
+.drug-update .sub-title {
+    border-bottom: 1px solid #BBBDBF;
+    font-weight: 700;
+    padding: 10px 15px 10px;
+}
+
+.drug-update a {
+    color: #009AD8;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.drug-update li {
+    padding: 15px 25px;
+}
+
+a.btn.btn-s.float-right {
+    color: #58595B;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.product-detail h4 {
+    color: #000;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.product-detail .info {
+    font-size: 14px;
+}
+
+.product-detail {
+    padding: 30px;
+}
+
+.product-detail a {
+    text-decoration: none;
+}
+
+.product-detail a:hover {
+    color: #EC1C24;
+}
+
+.sidebar-news .title,
+.sidebar-international-health .title{
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #000;
+    border-bottom: 1px solid #dddbdb;
+}
+
+.sidebar-news li a,
+.sidebar-international-health li a{
+    color: #1996C0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidebar-news a:hover,
+.sidebar-international-health a:hover{
+    color: #EC1C24;
+}
+
+.sidebar-news li,
+.sidebar-international-health li{
+    padding: 5px 0;
+}
+
+
+/* Advertisements Classes*/
+
+.add-home-page-top-right-305x355,
+.add-brand-page-top-right-340x355,
+.add-generic-page-top-right-340x355,
+.add-indication-page-top-right-340x355,
+.add-manufacturer-page-top-right-340x355,
+.add-resource-page-top-right-340x355,
+.add-mimslearning-page-top-right-340x355,
+.add-journal-page-top-right-340x355,
+.add-special-report-page-top-right-340x355,
+.add-mims-study-page-top-right-340x355,
+.add-news-page-top-right-340x355,
+.add-international-health-page-top-right-340x355,
+.add-job-page-top-right-340x355,
+.add-address-page-top-right-340x355,
+.add-doctor-page-top-right-340x355,
+.add-about-us-page-top-right-340x355 {
+    margin-bottom: 50px !important;
+}
+
+.add-home-page-inner-left-523x52,
+.add-home-page-inner-right-523x52,
+.add-generic-page-inner-left-523x52,
+.add-generic-page-inner-right-523x52,
+.add-indication-page-inner-left-523x52,
+.add-indication-page-inner-right-523x52,
+.add-manufacturer-page-inner-left-523x52,
+.add-manufacturer-page-inner-right-523x52,
+.add-resource-page-inner-left-523x52,
+.add-resource-page-inner-right-523x52,
+.add-mimslearning-page-inner-left-523x52,
+.add-mimslearning-page-inner-right-523x52,
+.add-journal-page-inner-left-523x52,
+.add-journal-page-inner-right-523x52,
+.add-special-report-page-inner-left-523x52,
+.add-special-report-page-inner-right-523x52,
+.add-mims-study-page-inner-left-523x52,
+.add-mims-study-page-inner-right-523x52,
+.add-news-page-inner-left-523x52,
+.add-news-page-inner-right-523x52,
+.add-international-health-page-inner-left-523x52,
+.add-international-health-page-inner-right-523x52,
+.add-job-page-inner-left-523x52,
+.add-job-page-inner-right-523x52,
+.add-address-page-inner-left-523x52,
+.add-address-page-inner-right-523x52,
+.add-doctor-page-inner-left-523x52,
+.add-doctor-page-inner-right-523x52,
+.add-about-us-page-inner-left-523x52,
+.add-about-us-page-inner-right-523x52 {
+    margin: 40px 0 !important;
+}
+
+.add-home-page-bottom-left-823x115,
+.add-brand-page-bottom-left-823x115,
+.add-generic-page-bottom-left-823x115,
+.add-indication-page-bottom-left-823x115,
+.add-manufacturer-page-bottom-left-823x115,
+.add-resource-page-bottom-left-823x115,
+.add-mimslearning-page-bottom-left-823x115,
+.add-journal-page-bottom-left-823x115,
+.add-special-report-page-bottom-left-823x115,
+.add-mims-study-page-bottom-left-823x115,
+.add-job-page-bottom-left-823x115,
+.add-address-page-bottom-left-823x115,
+.add-doctor-page-bottom-left-823x115,
+.add-about-us-page-bottom-left-823x115 {
+    margin: 60px 0 !important;
+}
+
+.product-add-2 {
+    margin-bottom: 50px;
+}
+
+.sidebar-news, .sidebar-international-health, .special-reports-sidebar, .mims-study-sidebar, .mimslearning-sidebar {
+    margin-bottom: 30px;
+    border: 1px solid #DBDCDD;
+}
+
+.sidebar-news ul,  .sidebar-international-health ul, .special-reports-sidebar ul, .mims-study-sidebar ul, .mimslearning-sidebar ul{
+    margin-left: 15px;
+    font-weight: 600;
+}
+.product-add-1 {
+    margin: 60px 0;
+}
+.sidebar-news h4,  .sidebar-international-health h4,  .special-reports-sidebar h3,  .mims-study-sidebar h3,  .mimslearning-sidebar h3{
+    background-color: #DBDCDD;
+    padding: 5px 15px 5px 15px;
+}
+
+.special-reports-sidebar .media,
+.mims-study-sidebar .media,
+.mimslearning-sidebar .media{
+    margin: 0px 10px 10px 15px;
+}
+
+.speacial-reports{
+    margin: 50px 0 0px 0px;
+    border: 1px solid #DBDCDD;
+    padding-bottom: 30px;
+}
+.speacial-reports .media{
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.speacial-reports h3 {
+    font-size: 20px;
+    /*margin: 50px 0 35px;*/
+    text-transform: uppercase;
+    background-color: #DBDCDD;
+    padding: 5px 30px 10px 15px;
+    margin-bottom: 20px;
+}
+
+.special-reports a, .special-reports-sidebar a,
+.mims-study a, .mims-study-sidebar a,
+.mimslearning a, .mimslearning-sidebar a{
+    color: #1996C0 !important;
+    text-decoration: none;
+}
+.special-reports-sidebar h3,
+.mims-study-sidebar h3,
+.mimslearning-sidebar h3{
+    margin-bottom: 25px;
+    font-size: 20px;
+    border-bottom: 1px solid #dddbdb;
+    text-transform: uppercase;
+}
+
+a.btn.btn-s.float-right:hover, .special-reports-sidebar a:hover, .mims-study-sidebar a:hover, .mimslearning-sidebar a:hover{
+    color: red !important;
+}
+.speacial-reports h5 a:hover {
+    color: #EC1C24;
+}
+
+.speacial-reports .media-body {
+
+    padding-top: 20px;
+}
+
+section.visitor {
+    margin: 50px 0;
+}
+
+.footer {
+    background: url(../img/footer.png);
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.footer h3.title.text-center {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+
+.footer h4.sub-title {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 27%;
+    padding-bottom: 15px;
+}
+
+.footer ul {
+    margin-bottom: 20px;
+}
+
+.footer li a {
+    color: #fff !important;
+    text-decoration: none;
+    padding-left: 11px;
+    font-size: 18pt;
+}
+
+.footer h4.sub-title {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 4%;
+    padding-bottom: 15px;
+}
+
+.footer h4.title {
+    color: #fff;
+    margin: 0 0 30px;
+    border-top: 1px solid #DBDCDD;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    background: #E10613;
+    padding: 25px 15px;
+}
+
+.footer-bottom p {
+    padding-top: 15px;
+    color: #fff;
+}
+
+.download-app {
+    margin-bottom: 30px;
+}
+.download-app.inline {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+}
+/*Css for Product-detail page*/
+
+.product-add-3,
+.product-add-4 {
+    margin-bottom: 45px;
+}
+
+.product-details .title {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.product-details {
+/*    border: 1px solid #B9BABD;
+    padding: 20px;
+*/
+}
+
+.product-add-5 {
+    position: absolute;
+    bottom: 0;
+}
+.product-add-5.inline {
+    display: inline-block;
+    width: 100%;
+}
+.produc-add-5 .img-fluid.img-full {
+    width: 100% !important;
+}
+.presentation .title {
+    color: #70B383;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.presentation .table thead th, .addresses .table thead th{
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #abacad;
+    border-left: 1px solid #757575;
+    background: #6BBDA4;
+    color: #fff;
+}
+.presentation .table thead th:last-child {
+    border-right: 1px solid #abacad;
+}
+
+.presentation .table td, .addresses .table td{
+    font-size: 14px;
+    border: 1px solid #abacad;
+}
+.presentation td:first-child {
+    color: #3DA9D8;
+}
+
+/*css for product detail list page*/
+
+.presentation-table a.page-link {
+    color: #3DA9D8;
+}
+
+.presentation-table td a {
+    text-decoration: none;
+}
+
+.presentation-table td a:hover {
+    color: #EC1C24;
+}
+
+.presentation-table .pagination {
+    margin: 30px 0;
+}
+.presentation-table h1{
+    font-size: 1.5rem;
+}
+
+.a-pag {
+    margin-bottom: 30px;
+}
+
+.a-pag .page-link {
+    padding: 7px 7.3px;
+}
+
+.find-doctor {
+    border: 1px solid #B9BABD;
+/*    border-radius: 12px;*/
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
+
+.find-doctor .title {
+    color: #2B499C;
+    font-size: 30pt;
+    /*position: absolute;
+    top: -1.9%;*/
+    background: #fff;
+}
+
+.find-doctor label {
+    color: #595A5C;
+}
+
+.find-doctor .btn {
+    background: #EC2227;
+    color: #fff;
+    top: 37%;
+    width: 50%;
+}
+
+.doctor-list {
+    /*display: flex;*/
+    justify-content: space-between;
+    border: 1px solid #B9BABD;
+ /*   border-radius: 12px;*/
+    padding: 20px 0;
+    margin: 0px 0px 30px 0px;
+   font-size: 13px;
+   /* font-weight: 700;*/
+}
+.doctor-list .doctor-photo{
+    align-items: center;
+}
+
+td{
+    font-size: 14px;
+}
+
+.doctor-photo,
+.doctor-address,
+.doctor-phone {
+    margin: 0 auto;
+}
+
+
+
+.doctor-address .icon, .doctor-phone .icon {
+    background: #EB2030;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #FFF;
+    margin-right: 6px;
+}
+.doctor-phone .title {
+    font-size: 9pt;
+    margin: 0 0 5px;
+}
+span.separator-2 {
+    border: 1px solid #B9BABD;
+    height: 100px;
+}
+.doctor-name {
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+/*css for job circular page*/
+
+
+.job {
+    border: 2px solid #cacacc;
+    padding: 20px;
+    border-radius:  3px;
+    margin-bottom: 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+.job-info {
+    flex: 1;
+    display:  flex;
+    flex-direction:  column;
+    padding-right:  20px;
+}
+.job h1,
+.job-details h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1996C0;
+}
+.job .fa,
+.job .fas{
+    font-size: 18px;
+    color: #b9b3b3;
+    position: relative;
+    top: -2px;
+}
+.job .date,
+.job-details .date{
+    font-size: 12px;
+    color: #aaa8a8;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.job p {
+    /*font-weight: 600;*/
+    color: #555;
+}
+.job .see-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 200px;
+    border-left: 1px solid #c5c0c0;
+
+}
+.job .see-more a {
+    color: #EC1C24;
+}
+.footer.no-padding {
+    padding: 0;
+}
+.row.download-apps {
+    text-align: center;
+}
+
+.job-circular-head .news-top,
+.job-circular-head .international-health-top{
+    background-image: url('../img/company-logos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom:  25px;
+    border-bottom:  none;
+}
+.job-circular-head .news-top h1.job-circular-title,
+.job-circular-head .international-health-top h1.job-circular-title{
+    background: #5EACD5;
+    padding: 10px 45px 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:  28px;
+    border-radius: 0 25px 25px 0;
+}
+
+/*css for circular details page*/
+/*
+.job-details h1 {
+    padding-top: 30px;
+}
+.job-details .requirement-list {
+    list-style: none;
+}
+.job-details .requirement-list {
+    font-size: 18px;
+    color: #3e3b3b;
+    padding-top:  30px;
+}
+.job-details .requirement-list li {
+    padding: 6px 0;
+}
+.job-details .requirement-list li.highlight {
+    color: #ec1c24;
+}
+.job-details .requirement-list i {
+    color: #c1c1c1;
+    padding-right:  15px;
+    font-size:  15px;
+}
+*/
+
+
+.job-details h1 {
+    padding-top: 30px;
+}
+.job-details .more-news p,
+.job-details .more-international-health p{
+    text-align: center!important;
+}
+.requirement-list {
+    list-style: none;
+}
+.requirement-list {
+    font-size: 14px;
+    color: #3e3b3b;
+    padding-top:  30px;
+}
+.requirement-list li {
+    padding: 6px 0;
+}
+.requirement-list li.highlight {
+    color: #ec1c24;
+}
+.requirement-list i {
+    color: #c1c1c1;
+    padding-right:  15px;
+    font-size:  15px;
+}
+ul.address-list{
+    list-style-position: outside;
+}
+.address-list li{
+    list-style-position: outside;
+    overflow: hidden;
+}
+.address-list li i{
+    float: left;
+    width: 10%;
+}
+.address-list li a{
+    float: left;
+    width: 90%;
+}
+
+.job-circular-img {
+    padding-top: 25px;
+}
+/*css for news page*/
+
+.news-top,
+.international-health-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 30px 0;
+    align-items:  center;
+    border-bottom: 1px solid #decbcb;
+}
+.news-top.padding-bottom-10,
+.international-health-top.padding-bottom-10{
+    padding-bottom: 10px;
+}
+.news.padding-top-30,
+.international-health.padding-top-30{
+    padding-top: 30px;
+}
+.news-top.no-border,
+.international-health-top.no-border{
+    border: none;
+}
+.news-top h1,
+.international-health-top h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #9f9292;
+}
+.news-top .news-alert,
+.international-health-top .international-health-alert{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.news-top .news-alert p,
+.international-health-top .international-health-alert p{
+    width: 170px;
+    padding:  0 20px;
+}
+.news-top .news-alert .form,
+.international-health-top .international-health-alert .form{
+    padding:  0 20px;
+    padding-left: 40px;
+}
+.news-top .news-alert .form .btn-primary,
+.international-health-top .international-health-alert .form .btn-primary{
+    background: #ec1c24;
+    border: none;
+    padding: 5px 30px;
+}
+
+.featured-news,
+.featured-international-health{
+    padding-top: 50px;
+    display:  flex;
+    flex-wrap:  wrap;
+}
+.featured-news .news-info,
+.featured-international-health .international-health-info{
+    width: 60%;
+}
+.featured-news .featured-news-img,
+.featured-international-health .featured-international-health-img{
+    width: 40%;
+}
+.featured-news .news-info h1,
+.featured-international-health .international-health-info h1{
+    font-size: 26px;
+    color: #6e6767;
+    margin-bottom: 20px;
+}
+.more-news,
+.more-international-health{
+    padding: 80px;
+    color: #1995c0;
+    padding-bottom:  0;
+}
+.more-news p,
+.more-international-health p{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.more-news .round,
+.more-international-health .round{
+    width: 50px;
+    height:  50px;
+    border-radius: 100px;
+    display:  inline-block;
+    border: 2px solid #1995c0;
+}
+.more-news i.fa-chevron-right,
+.more-international-health i.fa-chevron-right{
+    transform: rotate(90deg);
+    font-size:  25px;
+    color: #1995c0;
+    position:  relative;
+    top: 10px;
+}
+.news,
+.international-health{
+    padding-top: 100px;
+}
+.news .job .see-more,
+.international-health .job .see-more
+{
+    border: none;
+}
+.news .job-info a.see-details,
+.international-health .job-info a.see-details
+{
+    align-self: flex-end;
+}
+
+
+
+
+
+/*css for important address page*/
+.filter-address .search-input {
+    padding-top: 100px;
+    padding-bottom:  30px;
+}
+.filter-address h1 {
+    font-size: 24px;
+    color: #9f9898;
+    text-transform:  uppercase;
+    margin-bottom: 20px;
+}
+.table .thead-dark th {
+    background-color: #a6a6a6;
+    border: none;
+    padding: 5px;
+    padding-left:  20px;
+}
+/*
+.table td, .table th {
+    border: none;
+}
+*/
+/*
+.table td .border-left {
+    border-left: 1px solid #444;
+}
+*/
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+.addresses table tr {
+    margin: 10px 0;
+}
+.addresses h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #8d8484;
+    margin-bottom: 30px;
+}
+
+.address-pagination {
+    margin-top: 100px;
+}
+.general-table thead{
+    background-color: #5a3cac;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    color:#ffffff;
+}
+
+td .link{
+    font-size: 14px;
+}
+
+.modal-body input:not([type=radio]), .modal-body select{
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+}
+.modal-body .form-group{
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+}
+.form-horizontal .form-group{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+/*.modal-body input([type=radio]) {*/
+    /*font-size: 14px;*/
+/*}*/
+
+.error_message {
+    color: red;
+    display: none;
+}
+.brand-generic-detail{
+    margin-bottom: 35px;
+}
+.brand-generic-detail p{
+    text-align: justify;
+}
+p{
+    text-align: justify;
+}
+.table th, .table td{
+    padding: 0.55rem !important;
+}
+
+.imp-address-filter .btn {
+    background-color: #EC2227;
+    color: #fff;
+    margin-top: 20px;
+}
+ul.alpha-list{
+    margin: 15px 0px 15px -1px;
+    border: 1px solid #dbdcdd;
+}
+ul.alpha-list li{
+    padding-left: 7px;
+}
+ul.alpha-list li a:hover{
+    color: red !important;
+}
+.list-inline-item:not(:last-child){
+    margin-right: 0.3rem;
+}
+ul.alpha-list span.separator{
+    border-right: 1px solid #A6A8AB;
+}
+.news-list .job .see-more img,
+.international-health-list .job .see-more img{
+    width: 100px;
+    height: 75px;
+}
+/*div.add-home-page-top-right-305x355,*/
+/*div.add-bottom-left-823x115 {*/
+    /*margin: 5px auto;*/
+    /*position: relative;*/
+    /*padding: 10px;*/
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4);*/
+/*}*/
+
+/*div.add-home-page-top-right-305x355 > div,*/
+/*div.add-bottom-left-823x115 > div {*/
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*left: 10px;*/
+    /*right: 10px;*/
+    /*bottom: 10px;*/
+/*}*/
+
+.error, .required-field {
+    color: red;
+}
+.error-message {
+    font-size: 14px;
+}
+.modal-footer{
+    padding: 1.5rem 2rem;
+}
+.btn-info{
+    font-size: 15px;
+}
+.thumbnail {
+    overflow: hidden;
+}
+.alert {
+    padding: 20px 20px;
+}
+.alert h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.alert p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.modal-footer .btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}

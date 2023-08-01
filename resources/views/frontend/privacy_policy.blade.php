@@ -1,0 +1,570 @@
+@extends('frontend.layout.main')
+
+@push('title') Privacy Policy @endpush
+
+
+@push('css-link')
+<!-- Select2 -->
+<link rel="stylesheet" href="{{ url('/')}}/admin/plugins/select2/css/select2.min.css">
+@endpush
+@section('main-section')
+
+
+
+<style>
+    div#my_left_r {
+        display: flex;
+    }
+
+    div#my_left_r .in-page-advert {
+        width: 100%;
+        margin-left: 0px !important;
+    }
+
+    div#my_left_r .in-page-advert a.advert.no-outline {
+        text-align: left !important;
+        margin-left: 0px !important;
+        display: block;
+        padding-left: 0px !important;
+    }
+
+    div#my_left_r .in-page-advert a.advert.no-outline img {
+        object-fit: contain;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    div#my_left_r .col-md-6.col-12 {
+        display: flex;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .select2 {
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .select2:focus {
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .select2-selection__rendered {
+        line-height: 1.5;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        border: none;
+        background: transparent;
+        padding-top: inherit;
+    }
+
+    .select2-container--default .select2-selection--single {
+        border: none;
+    }
+
+    .select2-selection__arrow {
+        display: none !important;
+    }
+</style>
+
+
+
+<div class="banner title-banner d-md-flex d-none">
+    <h2>Privacy Policy</h2>
+</div>
+
+<div class="container">
+
+    <div class="row about-mims">
+
+        <div class="col-md-8">
+
+            <div class="about-content">
+
+
+
+                <p class="about-text">
+
+                    This Privacy Policy describes Our policies and procedures on the collection, use and
+                    disclosure of Your information when You use the Service and tells You about Your privacy
+                    rights and how the law protects You.
+                    We use Your Personal data to provide and improve the Service. By using the Service, You
+                    agree to the collection and use of information in accordance with this Privacy Policy.
+
+
+                </p>
+
+                <h4>Interpretation and Definitions</h4>
+
+                <h6><b>Interpretation</b> </h6>
+                <p class="about-text">
+
+                    The words of which the initial letter is capitalized have meanings defined under the
+                    following conditions. The following definitions shall have the same meaning regardless of
+                    whether they appear in singular or in plural.
+
+
+                </p>
+
+                <h6><b>Definitions</b></h6>
+
+                <p>For the purposes of this Privacy Policy:</p>
+                <p><b>Account</b> means a unique account created for You to access our Service or parts of
+                    our Service.
+                </p>
+
+
+                <p> <b>Company </b> (referred to as either "the Company", "We", "Us" or "Our" in this
+                    Agreement) refers to MIMS Bangladesh
+                </p>
+
+
+                <p> <b>Cookies</b> are small files that are placed on Your computer, mobile device or any other
+device by a website, containing the details of Your browsing history on that website
+among its many uses.
+</p>
+
+<p> <b>Country </b> refers to: Bangladesh</p>
+
+
+<p> <b>Device</b> means any device that can access the Service such as a computer, a
+cellphone or a digital tablet.
+</p>
+
+
+<p><b>Personal Data</b> is any information that relates to an identified or identifiable individual.</p>
+<p><b>Service </b>refers to the Website.</p>
+<p><b>Service Provider</b> means any natural or legal person who processes the data on
+behalf of the Company. It refers to third-party companies or individuals employed by
+the Company to facilitate the Service, to provide the Service on behalf of the
+Company, to perform services related to the Service or to assist the Company in
+analyzing how the Service is used.
+</p>
+<p><b>Third-party Social Media Service </b>refers to any website or any social network
+website through which a User can log in or create an account to use the Service.
+</p>
+<p><b>Usage Data </b>refers to data collected automatically, either generated by the use of the
+Service or from the Service infrastructure itself (for example, the duration of a page
+visit).
+</p>
+<p><b>Website </b>refers to MIMS Bangladesh, accessible from
+<a href="https://www.mimsbangladesh.com">https://www.mimsbangladesh.com</a>
+</p>
+<p><b>You</b> means the individual accessing or using the Service, or the company, or other
+legal entity on behalf of which such individual is accessing or using the Service, as
+applicable.
+</p>
+
+<h4>Collecting and Using Your Personal Data
+Types of Data Collected
+</h4>
+
+<p>While using Our Service, We may ask You to provide Us with certain personally identifiable
+information that can be used to contact or identify You. Personally identifiable information
+may include, but is not limited to:
+</p>
+<p><b></b>Email address</p>
+<p><b></b>First name and last name</p>
+<p><b></b>Phone number</p>
+<p><b></b>Address, State, Province, ZIP/Postal code, City</p>
+<p><b></b>Usage Data</p>
+<p><b>Usage Data</b></p>
+<p><b>Usage Data</b> is collected automatically when using the Service.</p>
+<p><b></b>Usage Data may include information such as Your Device's Internet Protocol address (e.g.<br>
+IP address), browser type, browser version, the pages of our Service that You visit, the time<br>
+and date of Your visit, the time spent on those pages, unique device identifiers and other
+diagnostic data.<br>
+When You access the Service by or through a mobile device, We may collect certain
+information automatically, including, but not limited to, the type of mobile device You use,<br>
+Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating<br>
+system, the type of mobile Internet browser You use, unique device identifiers and other
+diagnostic data.<br>
+We may also collect information that Your browser sends whenever You visit our Service or<br>
+when You access the Service by or through a mobile device.
+
+</p>
+<h4>Information from Third-Party Social Media Services</h4>
+<p><b></b>The Company allows You to create an account and log in to use the Service through the
+following Third-party Social Media Services:
+</p>
+<p><b></b>Google</p>
+<p><b></b>Facebook</p>
+<p><b></b>Twitter</p>
+<p><b></b>LinkedIn</p>
+<p><b></b>If You decide to register through or otherwise grant us access to a Third-Party Social Media <br>
+Service, We may collect Personal data that is already associated with Your Third-Party<br>
+Social Media Service's account, such as Your name, Your email address, Your activities or<br>
+Your contact list associated with that account.
+You may also have the option of sharing additional information with the Company through<br>
+Your Third-Party Social Media Service's account. If You choose to provide such information<br>
+and Personal Data, during registration or otherwise, You are giving the Company
+permission to use, share, and store it in a manner consistent with this Privacy Policy.
+</p>
+
+<h4>Tracking Technologies and Cookies</h4>
+
+<p><b></b>We use Cookies and similar tracking technologies to track the activity on Our Service and
+store certain information. Tracking technologies used are beacons, tags, and scripts to
+collect and track information and to improve and analyze Our Service. The technologies
+We use may include:
+</p>
+<p><b>Cookies or Browser</b> Cookies. A cookie is a small file placed on Your Device. You
+can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being
+sent. However, if You do not accept Cookies, You may not be able to use some parts
+of our Service. Unless you have adjusted Your browser setting so that it will refuse
+Cookies, our Service may use Cookies.
+</p>
+<p><b>Web Beacons.</b> Certain sections of our Service and our emails may contain small
+electronic files known as web beacons (also referred to as clear gifs, pixel tags, and
+single-pixel gifs) that permit the Company, for example, to count users who have
+visited those pages or opened an email and for other related website statistics (for
+example, recording the popularity of a certain section and verifying system and server
+integrity).
+
+<br>
+Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your
+personal computer or mobile device when You go offline, while Session Cookies are
+deleted as soon as You close Your web browser. Learn more about cookies on the Free
+Privacy Policy website article.
+We use both Session and Persistent Cookies for the purposes set out below:
+
+</p>
+
+<h4>Necessary / Essential Cookies</h4>
+<p><b></b>Type: Session Cookies</p>
+<p><b></b>Administered by: Us</p>
+<p><b></b>Purpose: These Cookies are essential to provide You with services available through
+the Website and to enable You to use some of its features. They help to authenticate
+users and prevent fraudulent use of user accounts. Without these Cookies, the
+services that You have asked for cannot be provided, and We only use these Cookies
+to provide You with those services.
+</p>
+<p><b>Cookies Policy / Notice Acceptance Cookies</b></p>
+<p><b></b>Type: Persistent Cookies</p>
+<p><b></b>Administered by: Us</p>
+<p><b></b>Purpose: These Cookies identify if users have accepted the use of cookies on the
+Website.
+</p>
+<p><b></b>Functionality Cookies</p>
+<p><b></b>Administered by: Us</p>
+<p><b></b>Purpose: These Cookies allow us to remember choices You make when You use the
+Website, such as remembering your login details or language preference. The
+purpose of these Cookies is to provide You with a more personal experience and to
+avoid You having to re-enter your preferences every time You use the Website.
+For more information about the cookies we use and your choices regarding cookies, please
+visit our Cookies Policy or the Cookies section of our Privacy Policy.
+</p>
+<p><b>Use of Your Personal Data</b></p>
+<p><b></b>The Company may use Personal Data for the following purposes:</p>
+<p><b>To provide and maintain our Service</b>, including to monitor the usage of our Service.</p>
+<p><b>To manage Your Account:</b> to manage Your registration as a user of the Service. The
+Personal Data You provide can give You access to different functionalities of the
+Service that are available to You as a registered user.
+</p>
+<p><b>For the performance of a contract:</b> the development, compliance and undertaking
+of the purchase contract for the products, items or services You have purchased or of
+any other contract with Us through the Service.
+</p>
+<p><b>To contact You: </b>To contact You by email, telephone calls, SMS, or other equivalent
+forms of electronic communication, such as a mobile application's push notifications
+regarding updates or informative communications related to the functionalities,
+products or contracted services, including the security updates, when necessary or
+reasonable for their implementation.
+</p>
+<p><b>To provide You</b> with news, special offers and general information about other goods,
+services and events which we offer that are similar to those that you have already
+purchased or enquired about unless You have opted not to receive such information.
+</p>
+<p><b>To manage Your requests:</b> To attend and manage Your requests to Us.</p>
+<p><b>For business transfers:</b> We may use Your information to evaluate or conduct a
+merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer
+of some or all of Our assets, whether as a going concern or as part of bankruptcy,
+liquidation, or similar proceeding, in which Personal Data held by Us about our
+Service users is among the assets transferred.
+For other purposes: We may use Your information for other purposes, such as data
+analysis, identifying usage trends, determining the effectiveness of our promotional
+campaigns and to evaluate and improve our Service, products, services, marketing
+and your experience.
+</p>
+
+<h4>We may share Your personal information in the following situations:</h4>
+<p><b>With Service Providers:</b> We may share Your personal information with Service
+Providers to monitor and analyze the use of our Service, to contact You.
+</p>
+<p><b>For business transfers:</b> We may share or transfer Your personal information in
+connection with, or during negotiations of, any merger, sale of Company assets,
+financing, or acquisition of all or a portion of Our business to another company.
+</p>
+<p><b>With Affiliates:</b> We may share Your information with Our affiliates, in which case we
+will require those affiliates to honor this Privacy Policy. Affiliates include Our parent
+company and any other subsidiaries, joint venture partners or other companies that
+We control or that are under common control with Us.
+</p>
+<p><b>With business partners:</b> We may share Your information with Our business partners
+to offer You certain products, services or promotions.
+</p>
+<p><b>With other users:</b> when You share personal information or otherwise interact in the
+public areas with other users, such information may be viewed by all users and may
+be publicly distributed outside. If You interact with other users or register through a
+Third-Party Social Media Service, Your contacts on the Third-Party Social Media
+Service may see Your name, profile, pictures and description of Your activity.
+Similarly, other users will be able to view descriptions of Your activity, communicate
+with You and view Your profile.
+</p>
+<p><b>With Your consent:</b> We may disclose Your personal information for any other
+purpose with Your consent.
+</p>
+
+<h4>Retention of Your Personal Data</h4>
+<p><b></b>The Company will retain Your Personal Data only for as long as is necessary for the
+purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the
+extent necessary to comply with our legal obligations (for example, if we are required to
+retain your data to comply with applicable laws), resolve disputes, and enforce our legal
+agreements and policies.
+The Company will also retain Usage Data for internal analysis purposes. Usage Data is
+generally retained for a shorter period of time, except when this data is used to strengthen
+the security or to improve the functionality of Our Service, or We are legally obligated to
+retain this data for longer time periods.
+</p>
+<h4>Transfer of Your Personal Data</h4>
+<p><b></b>Your information, including Personal Data, is processed at the Company's operating offices
+and in any other places where the parties involved in the processing are located. It means
+that this information may be transferred to — and maintained on — computers located
+outside of Your state, province, country or other governmental jurisdiction where the data
+protection laws may differ than those from Your jurisdiction.
+Your consent to this Privacy Policy followed by Your submission of such information
+represents Your agreement to that transfer.
+The Company will take all steps reasonably necessary to ensure that Your data is treated
+securely and in accordance with this Privacy Policy and no transfer of Your Personal Data
+will take place to an organization or a country unless there are adequate controls in place
+including the security of Your data and other personal information.
+</p>
+
+<h4>Delete Your Personal Data</h4>
+<p><b></b>You have the right to delete or request that We assist in deleting the Personal Data that We
+have collected about You.
+Our Service may give You the ability to delete certain information about You from within the
+Service.
+You may update, amend, or delete Your information at any time by signing in to Your
+Account, if you have one, and visiting the account settings section that allows you to
+manage Your personal information. You may also contact Us to request access to, correct,
+or delete any personal information that You have provided to Us.
+Please note, however, that We may need to retain certain information when we have a
+legal obligation or lawful basis to do so.
+</p>
+
+<h4>Disclosure of Your Personal Data</h4>
+<p><b>Business Transactions</b></p>
+<p><b></b>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may
+be transferred. We will provide notice before Your Personal Data is transferred and
+becomes subject to a different Privacy Policy.
+</p>
+<p><b>Law enforcement</b></p>
+<p><b></b>Under certain circumstances, the Company may be required to disclose Your Personal
+Data if required to do so by law or in response to valid requests by public authorities (e.g. a
+court or a government agency).
+</p>
+<p><b>Other legal requirements</b></p>
+<p><b></b>The Company may disclose Your Personal Data in the good faith belief that such action is
+necessary to:
+</p>
+<p><b></b>Comply with a legal obligation</p>
+<p><b></b>Protect and defend the rights or property of the Company</p>
+<p><b></b>Prevent or investigate possible wrongdoing in connection with the Service</p>
+<p><b></b>Protect the personal safety of Users of the Service or the public</p>
+<p><b></b>Protect against legal liability</p>
+<p><b>Security of Your Personal Data</b></p>
+<p><b></b>The security of Your Personal Data is important to Us, but remember that no method of
+transmission over the Internet, or method of electronic storage is 100% secure. While We
+strive to use commercially acceptable means to protect Your Personal Data, We cannot
+guarantee its absolute security.
+</p>
+<p><b>Children's Privacy</b></p>
+<p><b></b>Our Service does not address anyone under the age of 13. We do not knowingly collect
+personally identifiable information from anyone under the age of 13. If You are a parent or
+guardian and You are aware that Your child has provided Us with Personal Data, please
+contact Us. If We become aware that We have collected Personal Data from anyone under
+the age of 13 without verification of parental consent, we take steps to remove that
+information from Our servers.
+If We need to rely on consent as a legal basis for processing Your information and Your
+country requires consent from a parent, we may require Your parent's consent before We
+collect and use that information.
+</p>
+<p><b>Links to Other Websites</b></p>
+<p><b></b>Our Service may contain links to other websites that are not operated by Us. If You click on
+a third-party link, you will be directed to that third party's site. We strongly advise You to
+review the Privacy Policy of every site You visit.
+We have no control over and assume no responsibility for the content, privacy policies or
+practices of any third-party sites or services.
+</p>
+<p><b>Changes to this Privacy Policy</b></p>
+<p><b></b>We may update Our Privacy Policy from time to time. We will notify You of any changes by
+posting the new Privacy Policy on this page.
+We will let You know via email and/or a prominent notice on Our Service, prior to the
+change becoming effective and update the "Last updated" date at the top of this Privacy
+Policy.
+You are advised to review this Privacy Policy periodically for any changes. Changes to this
+Privacy Policy are effective when they are posted on this page.
+</p>
+<p><b></b>Contact Us</p>
+<p><b>If you have any questions about this Privacy Policy, you can contact us:</b></p>
+<p><b>By email: info@mimsbangladesh.com</b></p>
+<p><b>By phone number: +880-1309990637</b></p>
+<p><b>Last updated: December 07, 2022</b></p>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="about-img">
+
+                <img src="{{ url('/') }}/images/mims-aboutus2.png" alt="">
+
+            </div>
+
+        </div>
+
+      
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<script>
+    $('.banner').css('background-image', '../frontend/images/banner-bg.jpg');
+    $('.slick-prev.slick-arrow:before').css('background-image', '../frontend/images/icons/left-arrow-white.png');
+    $('.slick-next.slick-arrow:before').css('background-image', '../frontend/images/icons/right-arrow-white.png');
+    $('.slick-prev.slick-arrow.slick-disabled:before').css('background-image', '../frontend/images/icons/left-arrow-white.png');
+    $('.slick-next.slick-arrow.slick-dbefore').css('background-image', '../frontend/images/icons/right-arrow-white.png');
+    
+    $(document).ready(function() {
+        // $.getScript("http://connect.facebook.net/en_US/all.js# xfbml=1", function () {
+        // 	FB.init({ appId: 'xxxxxxxx', status: true, cookie: true, xfbml: true });
+        // });
+    });
+    
+</script>
+
+<script>
+    jQuery(document).ready(function($) {
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+<script>
+    // number count for stats, using jQuery animate
+
+    $('.counting').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+
+        $({
+            countNum: $this.text()
+        }).animate({
+                countNum: countTo
+            },
+
+            {
+
+                duration: 3000,
+                easing: 'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                    //alert('finished');
+                }
+
+            });
+
+
+    });
+</script>
+
+
+
+@endsection
+
+
+@include('frontend.component.script.frontend-sidebar-script')
+@push('js-link')
+
+<script src="{{ url('/')}}/admin/plugins/select2/js/select2.full.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+       
+
+
+        // journalMethods.getJournalList();
+        // // doctorMethods.getCity();
+        // // doctorMethods.getSpecialization();
+        // // doctorMethods.getDoctor(1);
+
+        // sidebar.getSidebar();
+      
+    });
+
+
+    
+
+   
+
+   
+
+   
+</script>
+
+@endpush

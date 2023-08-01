@@ -1,0 +1,56 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Amalesh
+ * Date: 7/17/2018
+ * Time: 12:31 PM
+ */
+?>
+<!-- footer -->
+<footer>
+    <div class="container d-flex justify-content-between align-items-center footer-wrapper">
+        <p>ISSN: 2707-109X<br>© 2022 - Pharmamedica</p>
+        <div class="footer-logo logo-middle">
+            <a href="<?php echo site_url()?>">
+                <!-- <img id="footerLogo" src="<?php //echo base_url().'application/views/';?>images/white-logo.png" alt=""> -->
+                <img id="footerLogo" style="width:150px;" class="logo d-none d-lg-block" src="<?php echo base_url().'application/views/';?>images/logo/main_logo.jpeg" alt="Rx MiMS Bangladesh">
+            </a>
+        </div>
+        <div class="footer-logo logo-middle quote">
+            <div class="visitor1">
+                <span style="color: #fff;">Visitor -</span>
+
+                <span style="color: #fff;" class="visitor-count"></span>
+            </div>
+        </div>
+        <div class="footer-hotline">
+            <a class="hotline-number" href="tel:+880-1617776467"><i class="ico-phone"></i>+880-161777(MIMS)6467</a><br>
+            <a class="hotline-number" href="tel:+880-1309990637"><i class="ico-phone"></i>+880-1309990637</a>
+			<br><a class="hotline-email" href="mailto:rxmimsbd@gmail.com"><i class="icon-email"></i>rxmimsbd@gmail.com</a>
+            <br/>
+            
+            <div class="left-links">
+                <a href="https://www.facebook.com/rxmimsbd" class="side-link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/rxmims" class="side-link" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="<?php echo base_url().'application/views/js/imageviewer.min.js';?>"></script>
+<script src="<?php echo base_url().'application/views/js/ui.js';?>"></script>
+<script>
+    frontendCommonMethods.incrementVisitorCount();
+    frontendCommonMethods.getNumberOfVisitor();
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        frontendCommonMethods.changeForMobileUI();
+    } else {
+        frontendCommonMethods.changeForDesktopUI();
+    }
+
+</script>
+</body>
+
+</html>
